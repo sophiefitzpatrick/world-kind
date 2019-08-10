@@ -1,1 +1,0 @@
-Empowering big impact with small actions. Part of @fixathon and @impactmakers_ project
