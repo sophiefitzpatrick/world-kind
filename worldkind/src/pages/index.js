@@ -1,7 +1,8 @@
-import React from "react"
+import React, { useState } from "react"
 import styled from "styled-components"
 import ReactModal from "react-modal"
 
+import CloseIcon from "../components/Icons/CloseIcon"
 import Layout from "../components/Layout"
 import Nav from "../components/Navigation"
 import World from "../media/images/world.jpg"
@@ -44,15 +45,32 @@ const ColumnHeading = styled.h1`
   font-size: 3rem;
   color: #0a132b;
 `
-// either useState or use props to open / close the modal
+
+const CloseButton = styled.button`
+  width: 100%;
+  border: none;
+  margin-top: -1rem;
+  margin-right: -1rem;
+  display: flex;
+  justify-content: flex-end;
+  outline: none;
+`
+
 export default function Homepage() {
-  // ReactModal.setAppElement(el)
+  const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <Layout>
       <Nav text="World Kind" />
+      <Image
+        src={World}
+        alt=""
+        onClick={() => {
+          setIsModalOpen(true)
+        }}
+      />
       <ReactModal
-        isOpen={true}
-        onRequestClose={() => {}}
+        isOpen={isModalOpen}
+        // onRequestClose={() => {}} << this will handle the transition
         contentLabel="Information Modal about <insert name here>"
         overlayClassName={styles.content_overlay}
         className={styles.content_body}
@@ -62,6 +80,14 @@ export default function Homepage() {
         </FeaturedImageCol>
         <FeatureInformationCol>
           <ColumnWrap>
+            <CloseButton
+              onClick={() => {
+                setIsModalOpen(false)
+              }}
+            >
+              <CloseIcon />
+            </CloseButton>
+
             <ColumnHeading>Name of Charity</ColumnHeading>
             <Paragraph>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
@@ -79,8 +105,6 @@ export default function Homepage() {
           </ColumnWrap>
         </FeatureInformationCol>
       </ReactModal>
-
-      <Image src={World} alt="" />
     </Layout>
   )
 }
