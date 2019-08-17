@@ -1,5 +1,5 @@
 import React from "react"
-import styled, { css } from "styled-components"
+import styled from "styled-components"
 import ReactModal from "react-modal"
 
 import Layout from "../components/Layout"
@@ -18,13 +18,32 @@ const FeaturedImageCol = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  ${props =>
-    props.backgroundColor &&
-    css`
-      background-color: pink;
-    `};
+  background-color: ${props =>
+    props.backgroundColor ? props.backgroundColor : `white`};
+`
+const FeatureInformationCol = styled.div`
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: white;
 `
 
+const ColumnWrap = styled.div`
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  font-family: Montserrat;
+`
+const Paragraph = styled.p`
+  font-size: 1.25rem;
+  color: #0a132b;
+  font-family: Montserrat;
+`
+const ColumnHeading = styled.h1`
+  font-size: 3rem;
+  color: #0a132b;
+`
 // either useState or use props to open / close the modal
 export default function Homepage() {
   // ReactModal.setAppElement(el)
@@ -38,10 +57,27 @@ export default function Homepage() {
         overlayClassName={styles.content_overlay}
         className={styles.content_body}
       >
-        <FeaturedImageCol backgroundColor>
+        <FeaturedImageCol backgroundColor="#4FB0C6">
           <Image src={World} alt="illustration of humans on top of earth" />
         </FeaturedImageCol>
-        <div style={{ width: "50%" }}>HELLO 2</div>
+        <FeatureInformationCol>
+          <ColumnWrap>
+            <ColumnHeading>Name of Charity</ColumnHeading>
+            <Paragraph>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              harum nobis doloribus culpa tempore ratione atque accusantium
+              magni delectus, tempora dolorem, exercitationem deserunt quasi
+              quidem et vero. Id, aliquam enim!
+            </Paragraph>
+            <Paragraph>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque
+              harum nobis doloribus culpa tempore ratione atque accusantium
+              magni delectus, tempora dolorem, exercitationem deserunt quasi
+              quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet
+              consectetur adipisicing elit. Ipsa, velit iusto.
+            </Paragraph>
+          </ColumnWrap>
+        </FeatureInformationCol>
       </ReactModal>
 
       <Image src={World} alt="" />
