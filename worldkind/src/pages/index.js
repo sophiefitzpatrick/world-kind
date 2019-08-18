@@ -83,7 +83,10 @@ export default function Homepage() {
       />
       <ReactModal
         isOpen={isModalOpen}
-        // onRequestClose={() => {}} << this will handle the transition
+        onRequestClose={() => {
+          setIsModalOpen(false)
+        }}
+        // ^^ this will also handle the transition
         contentLabel="Information Modal about <insert name here>"
         overlayClassName={styles.content_overlay}
         className={styles.content_body}
