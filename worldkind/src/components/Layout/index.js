@@ -6,6 +6,7 @@ const PageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 0 10%;
 `
 
 export default function Layout({ children }) {

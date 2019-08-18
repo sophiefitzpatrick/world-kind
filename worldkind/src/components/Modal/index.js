@@ -2,9 +2,10 @@ import React from "react"
 import styled from "styled-components"
 import ReactModal from "react-modal"
 
-import Image from "../Image"
 import CloseIcon from "../Icons/CloseIcon"
 import ColumnHeading from "../Heading"
+import Image from "../Image"
+import Paragraph from "../Paragraph"
 import World from "../../media/images/world.jpg"
 
 import styles from "./styles/modalstyles.module.css"
@@ -40,11 +41,6 @@ const ColumnWrap = styled.div`
   padding: 10%;
   width: 100%;
   height: 100%;
-`
-const Paragraph = styled.p`
-  font-size: 1.25rem;
-  color: #0a132b;
-  font-family: Montserrat;
 `
 
 const CloseButton = styled.button`
