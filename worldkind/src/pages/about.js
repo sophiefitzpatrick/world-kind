@@ -25,7 +25,7 @@ export default function About() {
           to know who to support without a lot of research.
         </Paragraph>
       </MaxWidth>
-      <div style={{ display: "flex" }}>
+      <div style={{ display: "flex", flexWrap: "wrap" }}>
         <div
           onClick={() => setIsModalOpen(true)}
           style={{
@@ -33,6 +33,7 @@ export default function About() {
             width: "250px",
             height: "250px",
             marginRight: "10px",
+            marginTop: "10px",
           }}
         >
           <Paragraph>I am a card, click me to open the modal</Paragraph>
@@ -44,6 +45,7 @@ export default function About() {
             width: "250px",
             height: "250px",
             marginRight: "10px",
+            marginTop: "10px",
           }}
         ></div>
         <div
@@ -52,6 +54,7 @@ export default function About() {
             backgroundColor: "#FFAA63",
             width: "250px",
             height: "250px",
+            marginTop: "10px",
           }}
         ></div>
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />

@@ -10,10 +10,13 @@ export default function Homepage() {
   // const [isModalOpen, setIsModalOpen] = useState(false)
   return (
     <Layout>
-      <MaxWidth width={50}>
-        <Heading size="4rem">WorldKind</Heading>
-        <Heading size="2rem">Empowering big impact with small actions</Heading>
-      </MaxWidth>
+      <Heading as="h1" size="4rem">
+        WorldKind
+      </Heading>
+      <Heading as="h1" size="2rem">
+        Empowering big impact with small actions
+      </Heading>
+
       <a href="/about">
         <Image src={LandingEarth} alt="" />
       </a>
