@@ -12,7 +12,6 @@
 @media (max-width: 760px) {
   .content_body {
     height: 90%;
-    overflow: scroll;
   }
 }
 
