@@ -21,6 +21,12 @@ const FeaturedImageCol = styled.div`
   align-items: center;
   background-color: ${props =>
     props.backgroundColor ? props.backgroundColor : `white`};
+
+  @media (max-width: 760px) {
+    height: 50%;
+    width: 100%;
+    padding: 10%;
+  }
 `
 const FeatureInformationCol = styled.div`
   width: 50%;
@@ -28,13 +34,17 @@ const FeatureInformationCol = styled.div`
   display: flex;
   justify-content: center;
   background-color: white;
+
+  @media (max-width: 760px) {
+    height: 50%;
+    width: 100%;
+  }
 `
 
 const ColumnWrap = styled.div`
   padding: 10%;
   width: 100%;
   height: 100%;
-  font-family: Montserrat;
 `
 const Paragraph = styled.p`
   font-size: 1.25rem;
@@ -44,16 +54,19 @@ const Paragraph = styled.p`
 const ColumnHeading = styled.h1`
   font-size: 3rem;
   color: #0a132b;
+  font-family: Montserrat;
 `
 
 const CloseButton = styled.button`
   width: 100%;
   border: none;
+  background-color: white;
   margin-top: -1rem;
   margin-right: -1rem;
   display: flex;
   justify-content: flex-end;
   outline: none;
+  cursor: pointer;
 `
 
 export default function Homepage() {
