@@ -34,6 +34,7 @@ export default function About() {
             height: "250px",
             marginRight: "10px",
             marginTop: "10px",
+            cursor: "pointer",
           }}
         >
           <Paragraph>I am a card, click me to open the modal</Paragraph>
@@ -46,6 +47,7 @@ export default function About() {
             height: "250px",
             marginRight: "10px",
             marginTop: "10px",
+            cursor: "pointer",
           }}
         ></div>
         <div
@@ -55,6 +57,7 @@ export default function About() {
             width: "250px",
             height: "250px",
             marginTop: "10px",
+            cursor: "pointer",
           }}
         ></div>
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
