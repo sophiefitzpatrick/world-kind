@@ -1,10 +1,13 @@
 import React, { useState } from "react"
 
+import Card from "../components/Card"
 import Layout from "../components/Layout"
+import Image from "../components/Image"
 import Heading from "../components/Heading"
 import MaxWidth from "../components/MaxWidth"
 import Modal from "../components/Modal"
 import Paragraph from "../components/Paragraph"
+import World from "../media/images/plastic-oceans.jpg"
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -26,19 +29,18 @@ export default function About() {
         </Paragraph>
       </MaxWidth>
       <div style={{ display: "flex", flexWrap: "wrap" }}>
-        <div
-          onClick={() => setIsModalOpen(true)}
-          style={{
-            backgroundColor: "#FFAA63",
-            width: "250px",
-            height: "250px",
-            marginRight: "10px",
-            marginTop: "10px",
-            cursor: "pointer",
+        <Card
+          onClick={() => {
+            setIsModalOpen(true)
           }}
         >
-          <Paragraph>I am a card, click me to open the modal</Paragraph>
-        </div>
+          <Image width="100%" height="250px" src={World}></Image>
+          <Paragraph align="center">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+            laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
+            repellat eius.
+          </Paragraph>
+        </Card>
         <div
           onClick={() => setIsModalOpen(true)}
           style={{

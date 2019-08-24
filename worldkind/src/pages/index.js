@@ -3,7 +3,7 @@ import React from "react"
 import Image from "../components/Image"
 import Layout from "../components/Layout"
 import Heading from "../components/Heading"
-import MaxWidth from "../components/MaxWidth"
+
 import LandingEarth from "../media/gifs/landing-earth-sparkles.gif"
 
 export default function Homepage() {
