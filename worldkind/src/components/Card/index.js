@@ -1,12 +1,12 @@
 import styled from "styled-components"
 
 const Card = styled.div`
-  width: 300px;
+  width: 30%;
   height: max-content;
-  margin-right: 10px;
+
   margin-top: 10px;
   cursor: pointer;
-  padding: 2rem;
+
   display: flex;
   flex-direction: column;
   align-items: center;

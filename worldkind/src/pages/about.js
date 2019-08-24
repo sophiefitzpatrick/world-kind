@@ -28,40 +28,59 @@ export default function About() {
           to know who to support without a lot of research.
         </Paragraph>
       </MaxWidth>
-      <div style={{ display: "flex", flexWrap: "wrap" }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          width: "100%",
+          justifyContent: "space-evenly",
+        }}
+      >
         <Card
           onClick={() => {
             setIsModalOpen(true)
           }}
         >
           <Image width="100%" height="250px" src={World}></Image>
-          <Paragraph align="center">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-            laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
-            repellat eius.
-          </Paragraph>
+          <div style={{ padding: "1rem 1.5rem" }}>
+            <Heading size="1.7em">Plastic Charity</Heading>
+            <Paragraph align="center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+              laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
+              repellat eius.
+            </Paragraph>
+          </div>
         </Card>
-        <div
-          onClick={() => setIsModalOpen(true)}
-          style={{
-            backgroundColor: "#FFAA63",
-            width: "250px",
-            height: "250px",
-            marginRight: "10px",
-            marginTop: "10px",
-            cursor: "pointer",
+        <Card
+          onClick={() => {
+            setIsModalOpen(true)
           }}
-        ></div>
-        <div
-          onClick={() => setIsModalOpen(true)}
-          style={{
-            backgroundColor: "#FFAA63",
-            width: "250px",
-            height: "250px",
-            marginTop: "10px",
-            cursor: "pointer",
+        >
+          <Image width="100%" height="250px" src={World}></Image>
+          <div style={{ padding: "1rem 1.5rem" }}>
+            <Heading size="1.7em">Plastic Charity</Heading>
+            <Paragraph align="center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+              laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
+              repellat eius.
+            </Paragraph>
+          </div>
+        </Card>
+        <Card
+          onClick={() => {
+            setIsModalOpen(true)
           }}
-        ></div>
+        >
+          <Image width="100%" height="250px" src={World}></Image>
+          <div style={{ padding: "1rem 1.5rem" }}>
+            <Heading size="1.7em">Plastic Charity</Heading>
+            <Paragraph align="center">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
+              laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
+              repellat eius.
+            </Paragraph>
+          </div>
+        </Card>
         <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
       </div>
     </Layout>

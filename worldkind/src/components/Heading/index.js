@@ -5,5 +5,6 @@ const Heading = styled.h2`
   color: #0a132b;
   font-family: Montserrat;
   text-align: center;
+  megin-bottom: 0;
 `
 export default Heading
