@@ -55,7 +55,7 @@ const CloseButton = styled.button`
   cursor: pointer;
 `
 
-export default function Modal({ isModalOpen, setIsModalOpen }) {
+export default function Modal({ isModalOpen, setIsModalOpen, title }) {
   return (
     <ReactModal
       isOpen={isModalOpen}
@@ -80,7 +80,7 @@ export default function Modal({ isModalOpen, setIsModalOpen }) {
             <CloseIcon />
           </CloseButton>
 
-          <ColumnHeading size="3rem">Name of Charity</ColumnHeading>
+          <ColumnHeading size="3rem">{title}</ColumnHeading>
           <Paragraph>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum
             nobis doloribus culpa tempore ratione atque accusantium magni

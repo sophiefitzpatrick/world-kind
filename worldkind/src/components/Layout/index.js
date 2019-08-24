@@ -7,6 +7,10 @@ const PageWrapper = styled.div`
   align-items: center;
   flex-direction: column;
   padding: 0 10%;
+
+  @media (max-width: 780px) {
+    padding: 0 5px;
+  }
 `
 
 export default function Layout({ children }) {

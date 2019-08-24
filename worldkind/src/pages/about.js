@@ -7,10 +7,16 @@ import Heading from "../components/Heading"
 import MaxWidth from "../components/MaxWidth"
 import Modal from "../components/Modal"
 import Paragraph from "../components/Paragraph"
-import World from "../media/images/plastic-oceans.jpg"
+
+import configs from "../configs/charityInformation"
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
+  const [currentlyOpenModal, setCurrentlyOpenModal] = useState("")
+  let cardTitle
+  const openSpecificModal = currentlyOpenModal === cardTitle
+
+  const modalConfig = [{ title: "Plastic Oceans" }, { title: "Hello" }]
   return (
     <Layout>
       <MaxWidth width={65}>
@@ -33,55 +39,38 @@ export default function About() {
           display: "flex",
           flexWrap: "wrap",
           width: "100%",
-          justifyContent: "space-evenly",
+          justifyContent: "center",
         }}
       >
-        <Card
-          onClick={() => {
-            setIsModalOpen(true)
-          }}
-        >
-          <Image width="100%" height="250px" src={World}></Image>
-          <div style={{ padding: "1rem 1.5rem" }}>
-            <Heading size="1.7em">Plastic Charity</Heading>
-            <Paragraph align="center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
-              repellat eius.
-            </Paragraph>
-          </div>
-        </Card>
-        <Card
-          onClick={() => {
-            setIsModalOpen(true)
-          }}
-        >
-          <Image width="100%" height="250px" src={World}></Image>
-          <div style={{ padding: "1rem 1.5rem" }}>
-            <Heading size="1.7em">Plastic Charity</Heading>
-            <Paragraph align="center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
-              repellat eius.
-            </Paragraph>
-          </div>
-        </Card>
-        <Card
-          onClick={() => {
-            setIsModalOpen(true)
-          }}
-        >
-          <Image width="100%" height="250px" src={World}></Image>
-          <div style={{ padding: "1rem 1.5rem" }}>
-            <Heading size="1.7em">Plastic Charity</Heading>
-            <Paragraph align="center">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis
-              laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisci,
-              repellat eius.
-            </Paragraph>
-          </div>
-        </Card>
-        <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        {configs.map(card => {
+          cardTitle = card.title
+          return (
+            <Card
+              id={card.title}
+              onClick={() => {
+                setIsModalOpen(true)
+              }}
+            >
+              <Image width="100%" height="250px" src={card.image}></Image>
+              <div style={{ padding: "1rem 1.5rem" }}>
+                <Heading size="1.7em">{card.title}</Heading>
+                <Paragraph align="center">{card.description}</Paragraph>
+              </div>
+              {/*  if the modal had the same title as the card just clicked, open that modal  */}
+            </Card>
+          )
+        })}
+        {modalConfig.map(modal => {
+          if (modal.title === cardTitle && isModalOpen) {
+            return (
+              <Modal
+                title={modal.title}
+                isModalOpen={isModalOpen}
+                setIsModalOpen={setIsModalOpen}
+              />
+            )
+          }
+        })}
       </div>
     </Layout>
   )
