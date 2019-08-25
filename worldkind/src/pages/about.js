@@ -13,10 +13,23 @@ import configs from "../configs/charityInformation"
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentlyOpenModal, setCurrentlyOpenModal] = useState("")
-  let cardTitle
-  const openSpecificModal = currentlyOpenModal === cardTitle
 
-  const modalConfig = [{ title: "Plastic Oceans" }, { title: "Hello" }]
+  // const openSpecificModal = currentlyOpenModal === cardTitle
+
+  const modalConfig = [{ title: "Hello" }, { title: "Plastic Oceans" }]
+  let acceptedFormats = []
+  let nameOfCharity
+
+  const openCorrectModal = nameOfCharity => {
+    for (let i = 0; i < modalConfig.length; i++) {
+      if (nameOfCharity === modalConfig[i].title) {
+        acceptedFormats.push(modalConfig[i])
+
+        return acceptedFormats
+      }
+    }
+  }
+
   return (
     <Layout>
       <MaxWidth width={65}>
@@ -43,11 +56,13 @@ export default function About() {
         }}
       >
         {configs.map(card => {
-          cardTitle = card.title
           return (
             <Card
-              id={card.title}
+              key={card.title}
               onClick={() => {
+                nameOfCharity = card.title
+
+                openCorrectModal(nameOfCharity)
                 setIsModalOpen(true)
               }}
             >
@@ -60,18 +75,12 @@ export default function About() {
             </Card>
           )
         })}
-        {modalConfig.map(modal => {
-          if (modal.title === cardTitle && isModalOpen) {
-            return (
-              <Modal
-                title={modal.title}
-                isModalOpen={isModalOpen}
-                setIsModalOpen={setIsModalOpen}
-              />
-            )
-          }
-        })}
+        {isModalOpen && (
+          <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} />
+        )}
       </div>
     </Layout>
   )
 }
+
+// nested forLoop => onClick, trigger a forLoop to loop over the modals and return the one modal that matches that card

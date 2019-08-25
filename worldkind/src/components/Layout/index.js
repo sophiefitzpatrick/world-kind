@@ -6,7 +6,7 @@ const PageWrapper = styled.div`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 10%;
+  padding: 0 5%;
 
   @media (max-width: 780px) {
     padding: 0 5px;
