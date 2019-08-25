@@ -14,8 +14,6 @@ export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentlyOpenModal, setCurrentlyOpenModal] = useState("")
 
-  // const openSpecificModal = currentlyOpenModal === cardTitle
-
   const modalConfig = [{ title: "Hello" }, { title: "Plastic Oceans" }]
 
   const openCorrectModal = currentlyOpenModal => {
@@ -34,51 +32,70 @@ export default function About() {
 
   return (
     <>
-      <ul
-        style={{
-          backgroundColor: "white",
-          height: "90px",
-          listStyle: "none",
-          display: "grid",
-          gridTemplateColumns: "50px 1fr 1fr 1fr 1fr",
-          width: "100%",
-        }}
-      >
-        <li>
-          <Image height="90px" src={World}></Image>
-        </li>
-        <li
+      <nav>
+        <ul
           style={{
-            color: "#225358",
-            fontWeight: "700",
-            fontSize: "25px",
-            textAlign: "center",
+            backgroundColor: "white",
+            // height: "80px",
+            listStyle: "none",
+            display: "grid",
+            gridTemplateColumns: "50px 1fr 1fr 1fr 1fr",
+            width: "100%",
+            margin: "0 0 3rem 0",
+            padding: "0 10px",
+            position: "fixed",
+            borderBottom: "1px solid lightGray",
+            zIndex: "99",
           }}
         >
-          <p>Home</p>
-        </li>
-        <li
-          style={{
-            backgroundColor: "#225358",
-            color: "white",
-            fontWeight: "700",
-            fontSize: "25px",
-            textAlign: "center",
-          }}
-        >
-          <p>Projects</p>
-        </li>
-        <li
-          style={{ fontWeight: "700", fontSize: "25px", textAlign: "center" }}
-        >
-          <p>What we do</p>
-        </li>
-        <li
-          style={{ fontWeight: "700", fontSize: "25px", textAlign: "center" }}
-        >
-          <p>Blog</p>
-        </li>
-      </ul>
+          <li style={{ height: "80px" }}>
+            <Image height="90px" src={World}></Image>
+          </li>
+          <li
+            style={{
+              color: "#225358",
+              fontWeight: "700",
+              fontSize: "25px",
+              textAlign: "center",
+              height: "80px",
+            }}
+          >
+            <p>Home</p>
+          </li>
+          <li
+            style={{
+              backgroundColor: "#225358",
+              color: "white",
+              fontWeight: "700",
+              fontSize: "25px",
+              textAlign: "center",
+              height: "80px",
+            }}
+          >
+            <p>Projects</p>
+          </li>
+          <li
+            style={{
+              fontWeight: "700",
+              fontSize: "25px",
+              textAlign: "center",
+              height: "80px",
+            }}
+          >
+            <p>What we do</p>
+          </li>
+          <li
+            style={{
+              fontWeight: "700",
+              fontSize: "25px",
+              textAlign: "center",
+              height: "80px",
+            }}
+          >
+            <p>Blog</p>
+          </li>
+        </ul>
+      </nav>
       <Layout>
         <MaxWidth width={65}>
           <Heading size="3rem">We are WorldKind.</Heading>
