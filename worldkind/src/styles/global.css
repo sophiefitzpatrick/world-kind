@@ -2,3 +2,8 @@ html {
   background-color: white;
   font-family: Montserrat;
 }
+
+body {
+  margin: 0;
+  /* overflow: hidden; */
+}
