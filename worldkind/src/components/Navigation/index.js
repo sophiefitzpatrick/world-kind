@@ -1,10 +1,55 @@
-import React from "react"
-import { Link } from "gatsby"
+import styled from "styled-components"
 
-export default function Nav({ text }) {
-  return (
-    <Link to="/about">
-      <h1>{text}</h1>
-    </Link>
-  )
-}
+export const DesktopNavigation = styled.ul`
+  background-color: white;
+  cursor: pointer;
+  height: 80px;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+  width: 100%;
+  margin: 0 0 3rem 0;
+  padding: 0 10px;
+  position: fixed;
+  border-bottom: 1px solid lightGray;
+  z-index: 99;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+`
+export const MobileNavigation = styled.ul`
+  background-color: white;
+  cursor: pointer;
+  border-bottom: 1px solid lightGray;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  margin: 0 0 3rem 0;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+
+  @media (min-width: 501px) {
+    display: none;
+  }
+`
+
+export const NavItem = styled.li`
+  color: #225358;
+  font-weight: 700;
+  font-size: 25px;
+  text-align: center;
+  height: 80px;
+  background-color: ${props => props.backgroundColor};
+  color: ${props => props.color || "#225358"};
+
+  @media (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 0 5px;
+  }
+`
