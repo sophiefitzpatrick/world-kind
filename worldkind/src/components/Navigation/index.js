@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 export const DesktopNavigation = styled.ul`
   background-color: white;
+  cursor: pointer;
   height: 80px;
   list-style: none;
   display: grid;
@@ -19,6 +20,7 @@ export const DesktopNavigation = styled.ul`
 `
 export const MobileNavigation = styled.ul`
   background-color: white;
+  cursor: pointer;
   border-bottom: 1px solid lightGray;
   z-index: 99;
   position: fixed;
