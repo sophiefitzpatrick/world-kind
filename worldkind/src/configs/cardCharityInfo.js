@@ -1,7 +1,7 @@
 import FishingNet from "../media/images/4ocean.jpg"
 import PlasticOcean from "../media/images/plastic-oceans.jpg"
 
-const charityInformation = [
+const cardCharityInformation = [
   {
     image: PlasticOcean,
     title: "Hello",
@@ -51,4 +51,4 @@ const charityInformation = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
 ]
-export default charityInformation
+export default cardCharityInformation

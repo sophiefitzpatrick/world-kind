@@ -55,7 +55,12 @@ const CloseButton = styled.button`
   cursor: pointer;
 `
 
-export default function Modal({ isModalOpen, setIsModalOpen, title }) {
+export default function Modal({
+  isModalOpen,
+  setIsModalOpen,
+  title,
+  description,
+}) {
   return (
     <ReactModal
       isOpen={isModalOpen}
@@ -87,13 +92,7 @@ export default function Modal({ isModalOpen, setIsModalOpen, title }) {
             delectus, tempora dolorem, exercitationem deserunt quasi quidem et
             vero. Id, aliquam enim!
           </Paragraph>
-          <Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum
-            nobis doloribus culpa tempore ratione atque accusantium magni
-            delectus, tempora dolorem, exercitationem deserunt quasi quidem et
-            vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur
-            adipisicing elit. Ipsa, velit iusto.
-          </Paragraph>
+          <Paragraph>{description}</Paragraph>
         </ColumnWrap>
       </FeatureInformationCol>
     </ReactModal>

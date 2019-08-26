@@ -13,20 +13,21 @@ import {
 import Modal from "../components/Modal"
 import Paragraph from "../components/Paragraph"
 import World from "../media/images/world.jpg"
-import configs from "../configs/charityInformation"
+
+import cardConfigs from "../configs/cardCharityInfo"
+import modalConfigs from "../configs/modalCharityInfo"
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentlyOpenModal, setCurrentlyOpenModal] = useState("")
 
-  const modalConfig = [{ title: "Hello" }, { title: "Plastic Oceans" }]
-
   const openCorrectModal = currentlyOpenModal => {
-    for (let i = 0; i < modalConfig.length; i++) {
-      if (currentlyOpenModal === modalConfig[i].title) {
+    for (let i = 0; i < modalConfigs.length; i++) {
+      if (currentlyOpenModal === modalConfigs[i].title) {
         return (
           <Modal
-            title={modalConfig[i].title}
+            description={modalConfigs[i].description}
+            title={modalConfigs[i].title}
             isModalOpen={isModalOpen}
             setIsModalOpen={setIsModalOpen}
           />
@@ -92,7 +93,7 @@ export default function About() {
             justifyContent: "center",
           }}
         >
-          {configs.map(card => {
+          {cardConfigs.map(card => {
             return (
               <Card
                 key={card.title}
@@ -106,7 +107,6 @@ export default function About() {
                   <Heading size="1.7em">{card.title}</Heading>
                   <Paragraph align="center">{card.description}</Paragraph>
                 </div>
-                {/*  if the modal had the same title as the card just clicked, open that modal  */}
               </Card>
             )
           })}
