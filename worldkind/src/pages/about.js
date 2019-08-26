@@ -14,7 +14,6 @@ import Modal from "../components/Modal"
 import Paragraph from "../components/Paragraph"
 import World from "../media/images/world.jpg"
 import configs from "../configs/charityInformation"
-import CloseIcon from "../Components/Icons/CloseIcon"
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
