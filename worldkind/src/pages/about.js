@@ -5,11 +5,16 @@ import Layout from "../components/Layout"
 import Image from "../components/Image"
 import Heading from "../components/Heading"
 import MaxWidth from "../components/MaxWidth"
-import { Navigation, NavItem } from "../components/Navigation"
+import {
+  DesktopNavigation,
+  MobileNavigation,
+  NavItem,
+} from "../components/Navigation"
 import Modal from "../components/Modal"
 import Paragraph from "../components/Paragraph"
 import World from "../media/images/world.jpg"
 import configs from "../configs/charityInformation"
+import CloseIcon from "../Components/Icons/CloseIcon"
 
 export default function About() {
   const [isModalOpen, setIsModalOpen] = useState(false)
@@ -33,14 +38,14 @@ export default function About() {
 
   return (
     <>
-      <Navigation>
+      <DesktopNavigation>
         <li style={{ height: "80px" }}>
           <Image height="90px" src={World}></Image>
         </li>
         <NavItem>
           <p>Home</p>
         </NavItem>
-        <NavItem>
+        <NavItem backgroundColor="#225358" color="white">
           <p>Projects</p>
         </NavItem>
         <NavItem>
@@ -49,7 +54,21 @@ export default function About() {
         <NavItem>
           <p>Blog</p>
         </NavItem>
-      </Navigation>
+      </DesktopNavigation>
+      <MobileNavigation>
+        <NavItem>
+          <p>Home</p>
+        </NavItem>
+        <NavItem backgroundColor="#225358" color="white">
+          <p>Projects</p>
+        </NavItem>
+        <NavItem>
+          <p>What we do</p>
+        </NavItem>
+        <NavItem>
+          <p>Blog</p>
+        </NavItem>
+      </MobileNavigation>
       <Layout>
         <MaxWidth width={65}>
           <Heading size="3rem">We are WorldKind.</Heading>

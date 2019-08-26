@@ -9,7 +9,7 @@ const PageWrapper = styled.div`
   padding: 100px 5%;
 
   @media (max-width: 780px) {
-    padding: 0 5px;
+    padding: 80px 5px;
   }
 `
 

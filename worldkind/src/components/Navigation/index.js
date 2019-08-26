@@ -1,6 +1,6 @@
 import styled from "styled-components"
 
-export const Navigation = styled.ul`
+export const DesktopNavigation = styled.ul`
   background-color: white;
   height: 80px;
   list-style: none;
@@ -12,6 +12,26 @@ export const Navigation = styled.ul`
   position: fixed;
   border-bottom: 1px solid lightGray;
   z-index: 99;
+
+  @media (max-width: 500px) {
+    display: none;
+  }
+`
+export const MobileNavigation = styled.ul`
+  background-color: white;
+  border-bottom: 1px solid lightGray;
+  z-index: 99;
+  position: fixed;
+  width: 100%;
+  margin: 0 0 3rem 0;
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, 25%);
+
+  @media (min-width: 501px) {
+    display: none;
+  }
 `
 
 export const NavItem = styled.li`
@@ -20,4 +40,14 @@ export const NavItem = styled.li`
   font-size: 25px;
   text-align: center;
   height: 80px;
+  background-color: ${props => props.backgroundColor};
+  color: ${props => props.color || "#225358"};
+
+  @media (max-width: 500px) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    padding: 0 5px;
+  }
 `
