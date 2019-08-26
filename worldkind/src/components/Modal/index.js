@@ -86,12 +86,6 @@ export default function Modal({
           </CloseButton>
 
           <ColumnHeading size="3rem">{title}</ColumnHeading>
-          <Paragraph>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum
-            nobis doloribus culpa tempore ratione atque accusantium magni
-            delectus, tempora dolorem, exercitationem deserunt quasi quidem et
-            vero. Id, aliquam enim!
-          </Paragraph>
           <Paragraph>{description}</Paragraph>
         </ColumnWrap>
       </FeatureInformationCol>
