@@ -5,14 +5,9 @@ import Layout from "../components/Layout"
 import Image from "../components/Image"
 import Heading from "../components/Heading"
 import MaxWidth from "../components/MaxWidth"
-import {
-  DesktopNavigation,
-  MobileNavigation,
-  NavItem,
-} from "../components/Navigation"
+import Navigation from "../components/Navigation"
 import Modal from "../components/Modal"
 import Paragraph from "../components/Paragraph"
-import World from "../media/images/world.jpg"
 
 import cardConfigs from "../configs/cardCharityInfo"
 import modalConfigs from "../configs/modalCharityInfo"
@@ -38,37 +33,7 @@ export default function About() {
 
   return (
     <>
-      <DesktopNavigation>
-        <li style={{ height: "80px" }}>
-          <Image height="90px" src={World}></Image>
-        </li>
-        <NavItem>
-          <p>Home</p>
-        </NavItem>
-        <NavItem backgroundColor="#225358" color="white">
-          <p>Projects</p>
-        </NavItem>
-        <NavItem>
-          <p>What we do</p>
-        </NavItem>
-        <NavItem>
-          <p>Blog</p>
-        </NavItem>
-      </DesktopNavigation>
-      <MobileNavigation>
-        <NavItem>
-          <p>Home</p>
-        </NavItem>
-        <NavItem backgroundColor="#225358" color="white">
-          <p>Projects</p>
-        </NavItem>
-        <NavItem>
-          <p>What we do</p>
-        </NavItem>
-        <NavItem>
-          <p>Blog</p>
-        </NavItem>
-      </MobileNavigation>
+      <Navigation />
       <Layout>
         <MaxWidth width={65}>
           <Heading size="3rem">We are WorldKind.</Heading>
