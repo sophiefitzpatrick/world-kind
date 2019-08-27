@@ -42,7 +42,7 @@ const FullWidthColumn = styled.div`
 `
 
 const FiveRowsOneColumn = styled.div`
-  width: 100%
+  width: 100%;
   display: grid;
   grid-template-rows: repeat(5, 20%);
   grid-row-gap: 1em;
@@ -52,7 +52,7 @@ const ThreeRowsOneColumn = styled.div`
   width: 100%;
   height: 800px;
   display: grid;
-  grid-template-rows: 1fr, 1fr fr;
+  grid-template-rows: 1fr 1fr fr;
 `
 
 const InfoSection = styled.div`
