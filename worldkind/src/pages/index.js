@@ -1,120 +1,143 @@
-import React, { useState } from "react"
+import React from "react"
+import styled from "styled-components"
 
-import Card from "../components/Card"
-import Layout from "../components/Layout"
-import Image from "../components/Image"
 import Heading from "../components/Heading"
-import MaxWidth from "../components/MaxWidth"
-import {
-  DesktopNavigation,
-  MobileNavigation,
-  NavItem,
-} from "../components/Navigation"
-import Modal from "../components/Modal"
+import Image from "../components/Image"
+import Navigation from "../components/Navigation"
 import Paragraph from "../components/Paragraph"
+import MaxWidth from "../components/MaxWidth"
+
+import Ocean from "../media/images/4ocean.jpg"
+import Turtle from "../media/images/turtle.jpg"
 import World from "../media/images/world.jpg"
 
-import cardConfigs from "../configs/cardCharityInfo"
-import modalConfigs from "../configs/modalCharityInfo"
+const Hero = styled.div`
+  width: 100%;
+  height: 600px;
+  padding: 80px 0 0 10%;
+  display: grid;
+  grid-template-columns: 55% 45%;
+  background-color: ${props => props.backgroundColor || "white"};
+`
 
-export default function About() {
-  const [isModalOpen, setIsModalOpen] = useState(false)
-  const [currentlyOpenModal, setCurrentlyOpenModal] = useState("")
+const LeftColumn = styled.div`
+  height: 100%;
+  width: 100%;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+`
 
-  const openCorrectModal = currentlyOpenModal => {
-    for (let i = 0; i < modalConfigs.length; i++) {
-      if (currentlyOpenModal === modalConfigs[i].title) {
-        return (
-          <Modal
-            description={modalConfigs[i].description}
-            title={modalConfigs[i].title}
-            isModalOpen={isModalOpen}
-            setIsModalOpen={setIsModalOpen}
-          />
-        )
-      }
-    }
-  }
+const FullWidthColumn = styled.div`
+  background-color: #225358;
+  color: white;
+  height: 350px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  padding-left: 10%;
+`
 
+const FiveRowsOneColumn = styled.div`
+  width: 100%
+  display: grid;
+  grid-template-rows: repeat(5, 20%);
+  grid-row-gap: 1em;
+`
+
+const ThreeRowsOneColumn = styled.div`
+  width: 100%;
+  height: 800px;
+  display: grid;
+  grid-template-rows: 1fr, 1fr fr;
+`
+
+const InfoSection = styled.div`
+  display: grid;
+  grid-template-columns: 55% 45%;
+  color: #225358;
+  padding: 10%;
+  height: max-content;
+`
+
+export default function Homepage() {
   return (
     <>
-      <DesktopNavigation>
-        <li style={{ height: "80px" }}>
-          <Image height="90px" src={World}></Image>
-        </li>
-        <NavItem>
-          <p>Home</p>
-        </NavItem>
-        <NavItem backgroundColor="#225358" color="white">
-          <p>Projects</p>
-        </NavItem>
-        <NavItem>
-          <p>What we do</p>
-        </NavItem>
-        <NavItem>
-          <p>Blog</p>
-        </NavItem>
-      </DesktopNavigation>
-      <MobileNavigation>
-        <NavItem>
-          <p>Home</p>
-        </NavItem>
-        <NavItem backgroundColor="#225358" color="white">
-          <p>Projects</p>
-        </NavItem>
-        <NavItem>
-          <p>What we do</p>
-        </NavItem>
-        <NavItem>
-          <p>Blog</p>
-        </NavItem>
-      </MobileNavigation>
-      <Layout>
-        <MaxWidth width={65}>
-          <Heading size="3rem">We are WorldKind.</Heading>
-        </MaxWidth>
-        <MaxWidth width={60}>
-          <Paragraph>
-            Every year 1.4 billion pounds of rubbish enters the ocean, resulting
-            in the deaths on 100,000 sea mammals.
-          </Paragraph>
-          <Paragraph>
-            There are tons of organisations working to clean up our oceans and
-            for those who are able, donating money is a great way of supporting
-            these efforts. But there are a lot of organisations and it can be
-            difficult to know who to support without a lot of research.
+      <Navigation />
+      <Hero backgroundColor="#131515">
+        <LeftColumn>
+          <MaxWidth width="60">
+            <Heading size="3rem" color="white" align="left">
+              WorldKind.
+            </Heading>
+            <Paragraph color="white">
+              Every year 1.4 billion pounds of rubbish enters the ocean,
+              resulting in the deaths on 100,000 sea mammals.
+            </Paragraph>
+          </MaxWidth>
+        </LeftColumn>
+        <Image src={Turtle} width="100%" height="100%" />
+      </Hero>
+      <FullWidthColumn>
+        <MaxWidth width="80">
+          <Heading size="3rem" color="white" align="left" style={{ margin: 0 }}>
+            Our Mission
+          </Heading>
+          <Paragraph color="white">
+            More in depth sentences based on what we are trying to do and why
+            people should use our page! This probably only needs to be two or
+            three lines long
           </Paragraph>
         </MaxWidth>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            width: "100%",
-            justifyContent: "center",
-          }}
-        >
-          {cardConfigs.map(card => {
-            return (
-              <Card
-                key={card.title}
-                onClick={() => {
-                  setCurrentlyOpenModal(card.title)
-                  setIsModalOpen(true)
-                }}
-              >
-                <Image width="100%" height="250px" src={card.image}></Image>
-                <div style={{ padding: "1rem 1.5rem" }}>
-                  <Heading size="1.7em">{card.title}</Heading>
-                  <Paragraph align="center">{card.description}</Paragraph>
-                </div>
-              </Card>
-            )
-          })}
-          {isModalOpen && openCorrectModal(currentlyOpenModal)}
-        </div>
-      </Layout>
+      </FullWidthColumn>
+      <InfoSection>
+        <FiveRowsOneColumn>
+          <Heading size="3rem" align="left" style={{ margin: 0 }}>
+            Facts
+          </Heading>
+          <Paragraph>
+            Shocking facts to help show that this is a cause worth peoples
+            attention
+          </Paragraph>
+          <Paragraph>
+            More facts that are surprising can be listed here
+          </Paragraph>
+          <Paragraph>
+            Oh wow that is shocking! I defo want to donate some money to a great
+            charity
+          </Paragraph>
+          <Paragraph>
+            Last fact that shows our cause can be written here
+          </Paragraph>
+        </FiveRowsOneColumn>
+        <ThreeRowsOneColumn>
+          <Image
+            src={Ocean}
+            height="100%"
+            width="60%"
+            style={{
+              justifySelf: "end",
+            }}
+          />
+          <Image
+            src={World}
+            height="100%"
+            width="60%"
+            style={{
+              justifySelf: "end",
+            }}
+          />
+          <Image
+            src={Turtle}
+            height="100%"
+            width="60%"
+            style={{ justifySelf: "end" }}
+          />
+        </ThreeRowsOneColumn>
+      </InfoSection>
     </>
   )
 }
-
-// nested forLoop => onClick, trigger a forLoop to loop over the modals and return the one modal that matches that card

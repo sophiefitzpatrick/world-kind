@@ -1,6 +1,11 @@
+import React from "react"
+import Link from "gatsby-link"
 import styled from "styled-components"
 
-export const DesktopNavigation = styled.ul`
+import Image from "../Image"
+import World from "../../media/images/world.jpg"
+
+const DesktopNavigation = styled.ul`
   background-color: white;
   cursor: pointer;
   height: 80px;
@@ -18,7 +23,7 @@ export const DesktopNavigation = styled.ul`
     display: none;
   }
 `
-export const MobileNavigation = styled.ul`
+const MobileNavigation = styled.ul`
   background-color: white;
   cursor: pointer;
   border-bottom: 1px solid lightGray;
@@ -36,7 +41,7 @@ export const MobileNavigation = styled.ul`
   }
 `
 
-export const NavItem = styled.li`
+const NavItem = styled.li`
   color: #225358;
   font-weight: 700;
   font-size: 25px;
@@ -53,3 +58,67 @@ export const NavItem = styled.li`
     padding: 0 5px;
   }
 `
+
+const WorldKindLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+`
+export default function Navigation() {
+  return (
+    <>
+      <DesktopNavigation>
+        <WorldKindLink to="/">
+          <li style={{ height: "80px" }}>
+            <Image height="80px" src={World}></Image>
+          </li>
+        </WorldKindLink>
+        <NavItem>
+          <WorldKindLink to="/">
+            <p>Home</p>
+          </WorldKindLink>
+        </NavItem>
+
+        <NavItem backgroundColor="#225358" color="white">
+          <WorldKindLink to="projects">
+            <p>Projects</p>
+          </WorldKindLink>
+        </NavItem>
+
+        <NavItem>
+          <WorldKindLink to="/">
+            <p>What we do</p>
+          </WorldKindLink>
+        </NavItem>
+        <NavItem>
+          <WorldKindLink to="/">
+            <p>Blog</p>
+          </WorldKindLink>
+        </NavItem>
+      </DesktopNavigation>
+
+      <MobileNavigation>
+        <NavItem>
+          <WorldKindLink to="/">
+            <p>Home</p>
+          </WorldKindLink>
+        </NavItem>
+        <NavItem backgroundColor="#225358" color="white">
+          <WorldKindLink to="projects">
+            <p>Projects</p>
+          </WorldKindLink>
+        </NavItem>
+        <NavItem>
+          <WorldKindLink to="/">
+            <p>What we do</p>
+          </WorldKindLink>
+        </NavItem>
+        <NavItem>
+          <WorldKindLink to="/">
+            <p>Blog</p>
+          </WorldKindLink>
+        </NavItem>
+      </MobileNavigation>
+    </>
+  )
+}
