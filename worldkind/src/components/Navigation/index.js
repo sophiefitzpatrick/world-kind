@@ -1,4 +1,5 @@
 import React from "react"
+import Link from "gatsby-link"
 import styled from "styled-components"
 
 import Image from "../Image"
@@ -57,38 +58,65 @@ const NavItem = styled.li`
     padding: 0 5px;
   }
 `
+
+const WorldKindLink = styled(Link)`
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+`
 export default function Navigation() {
   return (
     <>
       <DesktopNavigation>
-        <li style={{ height: "80px" }}>
-          <Image height="80px" src={World}></Image>
-        </li>
+        <WorldKindLink to="/">
+          <li style={{ height: "80px" }}>
+            <Image height="80px" src={World}></Image>
+          </li>
+        </WorldKindLink>
         <NavItem>
-          <p>Home</p>
+          <WorldKindLink to="/">
+            <p>Home</p>
+          </WorldKindLink>
         </NavItem>
+
         <NavItem backgroundColor="#225358" color="white">
-          <p>Projects</p>
+          <WorldKindLink to="projects">
+            <p>Projects</p>
+          </WorldKindLink>
+        </NavItem>
+
+        <NavItem>
+          <WorldKindLink to="/">
+            <p>What we do</p>
+          </WorldKindLink>
         </NavItem>
         <NavItem>
-          <p>What we do</p>
-        </NavItem>
-        <NavItem>
-          <p>Blog</p>
+          <WorldKindLink to="/">
+            <p>Blog</p>
+          </WorldKindLink>
         </NavItem>
       </DesktopNavigation>
+
       <MobileNavigation>
         <NavItem>
-          <p>Home</p>
+          <WorldKindLink to="/">
+            <p>Home</p>
+          </WorldKindLink>
         </NavItem>
         <NavItem backgroundColor="#225358" color="white">
-          <p>Projects</p>
+          <WorldKindLink to="projects">
+            <p>Projects</p>
+          </WorldKindLink>
         </NavItem>
         <NavItem>
-          <p>What we do</p>
+          <WorldKindLink to="/">
+            <p>What we do</p>
+          </WorldKindLink>
         </NavItem>
         <NavItem>
-          <p>Blog</p>
+          <WorldKindLink to="/">
+            <p>Blog</p>
+          </WorldKindLink>
         </NavItem>
       </MobileNavigation>
     </>
