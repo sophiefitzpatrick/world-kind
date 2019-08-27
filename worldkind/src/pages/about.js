@@ -7,7 +7,9 @@ import Navigation from "../components/Navigation"
 import Paragraph from "../components/Paragraph"
 import MaxWidth from "../components/MaxWidth"
 
+import Ocean from "../media/images/4ocean.jpg"
 import Turtle from "../media/images/turtle.jpg"
+import World from "../media/images/world.jpg"
 
 const Hero = styled.div`
   width: 100%;
@@ -72,6 +74,71 @@ export default function Homepage() {
             three lines long
           </Paragraph>
         </MaxWidth>
+      </div>
+      <div
+        style={{
+          display: "grid",
+          gridTemplateColumns: "55% 45%",
+          color: "#225358",
+          padding: "10%",
+          height: "max-content",
+        }}
+      >
+        <div
+          style={{
+            width: "100%",
+            display: "grid",
+            gridTemplateRows: "repeat(5, 20%)",
+            gridRowGap: "1em",
+          }}
+        >
+          <Heading size="3rem" align="left" style={{ margin: 0 }}>
+            Facts
+          </Heading>
+          <Paragraph>
+            Shocking facts to help show that this is a cause worth peoples
+            attention
+          </Paragraph>
+          <Paragraph>
+            More facts that are surprising can be listed here
+          </Paragraph>
+          <Paragraph>
+            Oh wow that is shocking! I defo want to donate some money to a great
+            charity
+          </Paragraph>
+          <Paragraph>
+            Last fact that shows our cause can be written here
+          </Paragraph>
+        </div>
+        <div
+          style={{
+            width: "100%",
+            height: "800px",
+            display: "grid",
+            gridTemplateRows: "1fr, 1fr fr",
+          }}
+        >
+          <Image
+            src={Ocean}
+            style={{
+              height: "100%",
+              width: "60%",
+              justifySelf: "end",
+            }}
+          />
+          <Image
+            src={World}
+            style={{
+              height: "100%",
+              width: "60%",
+              justifySelf: "end",
+            }}
+          />
+          <Image
+            src={Turtle}
+            style={{ height: "100%", width: "60%", justifySelf: "end" }}
+          />
+        </div>
       </div>
     </>
   )
