@@ -62,7 +62,7 @@ export default function Navigation() {
     <>
       <DesktopNavigation>
         <li style={{ height: "80px" }}>
-          <Image height="90px" src={World}></Image>
+          <Image height="80px" src={World}></Image>
         </li>
         <NavItem>
           <p>Home</p>
