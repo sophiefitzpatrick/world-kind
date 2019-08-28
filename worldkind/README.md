@@ -65,7 +65,7 @@ Who are we?
 
 If you want to do something to help clean the oceans, please get in touch!
 
-We believe that everyone has something great to add to our team and we welcome pul requests! If you do decide to get involved, we'd appreciate it if you followed our protocol.
+We believe that everyone has something great to add to our team and we welcome pull requests! If you do decide to get involved, we'd appreciate it if you followed our protocol.
 
 1. Take a look at the Open Issues in our project (https://github.com/sophiefitzpatrick/world-kind/issues)
 
