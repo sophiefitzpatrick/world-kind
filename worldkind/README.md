@@ -85,5 +85,5 @@ We believe that everyone has something great to add to our team and we welcome p
 
 - Project homepage: https://www.weareworldkind.com/about/
 - Repository: https://github.com/sophiefitzpatrick/world-kind
-- Issue tracker: https://github.com/your/awesome-project/issues
+- Issue tracker: https://github.com/sophiefitzpatrick/world-kind/issues
 - In case of sensitive bugs like security vulnerabilities, please send us a DM on Twitter (https://twitter.com/teamworldkind) directly instead of using issue tracker. We value your effort to improve the security and privacy of this project!
