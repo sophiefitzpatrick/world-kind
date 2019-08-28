@@ -48,7 +48,7 @@ Who are we?
 
 - Aisling Porceddu, a QA Engineer with a love of colour and beautiful design (https://twitter.com/aislingporceddu)
 - Bethany Gill, a Product Design undergraduate in her final year at London SouthBank University (https://twitter.com/Bethany_Gill98)
-- Alaina Bader, a Customer Support Manager who moonlights as a talented illustrator and animator (https://dribbble.com/alainarobert)
+- Alaina Robert, a Customer Support Manager who moonlights as a talented illustrator and animator (https://dribbble.com/alainarobert)
 
 ### Development
 
@@ -73,7 +73,13 @@ We believe that everyone has something great to add to our team and we welcome p
 
 3. If you'd like to create a new issue, comment on it and let us know what we need to get this sorted.
 
-4. As soon as you're ready, create a new branch and open a pull request and merge your new branch ✨
+4. To get started you'll need to clone the repository, head to terminal and run `gatsby develop` at the root of the project to view the world-kind locally.
+
+5. As soon as you're ready:
+- create a new branch
+- commit your code
+- create a pull request
+- once it has one approving review, then go ahead and merge your new branch ✨
 
 ## Links
 
