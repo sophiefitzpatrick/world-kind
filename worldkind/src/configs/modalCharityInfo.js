@@ -13,25 +13,25 @@ import Seal from "../media/images/illustrations/modal-illustrations/seal.jpg"
 
 const modalConfig = [
   {
-    title: "Hello",
+    title: "Coral Alive",
     image: Coral,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "4ocean",
     image: FishingNet,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans5",
+    title: "Marine Conservation Society",
     image: Marine,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans4",
+    title: "Ocean Giants Trust",
     image: Giants,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
@@ -43,43 +43,43 @@ const modalConfig = [
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "Recover",
     image: Recover,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "Reef Restoration Trust",
     image: Reef,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "SEE Turtles",
     image: Turtle,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "Surf Rider",
     image: Surf,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "Surfers Against Sewage",
     image: SurfSewage,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "The Ocean Cleanup",
     image: CleanUp,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
   },
   {
-    title: "Plastic Oceans",
+    title: "Cuddle Earth",
     image: Seal,
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
