@@ -16,29 +16,37 @@ const Hero = styled.div`
   height: 600px;
   padding: 80px 0 0 10%;
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   background-color: ${props => props.backgroundColor || "white"};
+
+  @media (max-width: 500px) {
+    padding: 80px 0 0 0;
+  }
 `
 
 const LeftColumn = styled.div`
-  height: 100%;
-  width: 100%;
+  min-height: 250px;
   color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (max-width: 500px) {
+    padding: 10%;
+  }
 `
 
 const FullWidthColumn = styled.div`
   background-color: #225358;
   color: white;
   height: 350px;
-  width: 100%;
+
   margin: 0;
   display: flex;
-  justify-content: start;
-  align-items: center;
-  padding-left: 10%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding: 0 10%;
 `
 
 const FiveRowsOneColumn = styled.div`
@@ -52,12 +60,13 @@ const ThreeRowsOneColumn = styled.div`
   width: 100%;
   height: 800px;
   display: grid;
-  grid-template-rows: 1fr 1fr fr;
+  grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
 `
 
 const InfoSection = styled.div`
   display: grid;
-  grid-template-columns: 55% 45%;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-column-gap: 10%;
   color: #225358;
   padding: 10%;
   height: max-content;
@@ -65,11 +74,11 @@ const InfoSection = styled.div`
 
 export default function Homepage() {
   return (
-    <>
+    <div style={{ overflow: "hidden" }}>
       <Navigation />
       <Hero backgroundColor="#131515">
         <LeftColumn>
-          <MaxWidth width="60">
+          <MaxWidth width="80">
             <Heading size="3rem" color="white" align="left">
               WorldKind.
             </Heading>
@@ -79,19 +88,22 @@ export default function Homepage() {
             </Paragraph>
           </MaxWidth>
         </LeftColumn>
-        <Image src={Turtle} width="100%" height="100%" />
+        <Image
+          src={Turtle}
+          width="100%"
+          height="100%"
+          style={{ minHeight: "250px" }}
+        />
       </Hero>
       <FullWidthColumn>
-        <MaxWidth width="80">
-          <Heading size="3rem" color="white" align="left" style={{ margin: 0 }}>
-            Our Mission
-          </Heading>
-          <Paragraph color="white">
-            More in depth sentences based on what we are trying to do and why
-            people should use our page! This probably only needs to be two or
-            three lines long
-          </Paragraph>
-        </MaxWidth>
+        <Heading size="3rem" color="white" align="left" style={{ margin: 0 }}>
+          Our Mission
+        </Heading>
+        <Paragraph color="white">
+          More in depth sentences based on what we are trying to do and why
+          people should use our page! This probably only needs to be two or
+          three lines long
+        </Paragraph>
       </FullWidthColumn>
       <InfoSection>
         <FiveRowsOneColumn>
@@ -117,7 +129,7 @@ export default function Homepage() {
           <Image
             src={Ocean}
             height="100%"
-            width="60%"
+            width="100%"
             style={{
               justifySelf: "end",
             }}
@@ -125,7 +137,7 @@ export default function Homepage() {
           <Image
             src={World}
             height="100%"
-            width="60%"
+            width="100%"
             style={{
               justifySelf: "end",
             }}
@@ -133,11 +145,11 @@ export default function Homepage() {
           <Image
             src={Turtle}
             height="100%"
-            width="60%"
+            width="100%"
             style={{ justifySelf: "end" }}
           />
         </ThreeRowsOneColumn>
       </InfoSection>
-    </>
+    </div>
   )
 }
