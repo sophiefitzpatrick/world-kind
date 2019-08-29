@@ -169,8 +169,13 @@ export default function Homepage() {
         </ThreeRowsOneColumn>
       </InfoSection>
       <FullWidthColumn>
-        <div style={{ paddingTop: "5%" }}>
-          <Heading size="3rem" color="white" align="left" style={{ margin: 0 }}>
+        <div style={{ padding: "5% 0" }}>
+          <Heading
+            size="3rem"
+            color="white"
+            align="center"
+            style={{ margin: 0 }}
+          >
             The WorldKind Team
           </Heading>
         </div>
@@ -192,6 +197,7 @@ export default function Homepage() {
                 justifyContent: "center",
                 alignItems: "center",
                 cursor: "pointer",
+                margin: "5% 0",
               }}
             >
               <Image width="100px" height="100px" src={person.avatar} />
