@@ -13,9 +13,10 @@ import logo from "../media/images/illustrations/logo-200.png"
 import blogInformation from "../configs/blogInfo.js"
 
 export default function Blog() {
+  const windowLocation = window.location.href.split("/")
   return (
     <>
-      <Navigation />
+      <Navigation currentPage={windowLocation[3]} />
       <Layout>
         <Image src={logo}></Image>
         <MaxWidth width={65}>
@@ -24,7 +25,6 @@ export default function Blog() {
         <MaxWidth width={60}>
           <Paragraph>Empowering big impact with small actions</Paragraph>
         </MaxWidth>
-        {/* potentially could have a progress bar here showing ho w much they've read */}
         <div
           style={{
             display: "flex",
@@ -41,19 +41,14 @@ export default function Blog() {
                 target="_blank"
                 style={{ textDecoration: "none" }}
               >
-                <Card
-                  key={item.title}
-                  onClick={() => {
-                    console.log("hello")
-                  }}
-                >
+                <Card key={item.title}>
                   <Image width="100%" height="250px" src={item.image}></Image>
                   <div
                     style={{
                       height: "200px",
                       display: "flex",
                       justifyContent: "center",
-                      alignItems: "center;",
+                      alignItems: "center",
                       flexDirection: "column",
                     }}
                   >
@@ -61,12 +56,12 @@ export default function Blog() {
                     <div>
                       <img
                         style={{
-                          width: "30px",
-                          height: "30px",
+                          width: "36px",
+                          height: "36px",
                           borderRadius: "100%",
                           position: "absolute",
-                          bottom: "2%",
-                          left: "5%",
+                          bottom: "3%",
+                          left: "4%",
                         }}
                         src={item.author}
                       ></img>

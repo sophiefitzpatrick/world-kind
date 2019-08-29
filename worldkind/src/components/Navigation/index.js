@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useState } from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
 
@@ -10,8 +10,8 @@ const DesktopNavigation = styled.ul`
   cursor: pointer;
   height: 80px;
   list-style: none;
-  display: grid;
-  grid-template-columns: 50px 1fr 1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
   margin: 0 0 3rem 0;
   padding: 0 10px;
@@ -47,8 +47,9 @@ const NavItem = styled.li`
   font-size: 25px;
   text-align: center;
   height: 80px;
-  background-color: ${props => props.backgroundColor};
-  color: ${props => props.color || "#225358"};
+  background-color: ${props => props.shouldHighlightTab && "#225358"};
+  color: ${props =>
+    props.shouldHighlightTab ? "white" : props.color || "#225358"};
 
   @media (max-width: 500px) {
     display: flex;
@@ -64,7 +65,15 @@ const WorldKindLink = styled(Link)`
   color: inherit;
   cursor: pointer;
 `
-export default function Navigation() {
+export default function Navigation({ currentPage }) {
+  const NavItems = [
+    { title: "Home", to: "/" },
+    { title: "Projects", to: "/projects" },
+    { title: "Blog", to: "/blog" },
+  ]
+  const [isCurrentTab, setIsCurrentTab] = useState("")
+
+  const shouldHighlightTab = currentPage === isCurrentTab
   return (
     <>
       <DesktopNavigation>
@@ -73,28 +82,29 @@ export default function Navigation() {
             <Image height="80px" src={logo}></Image>
           </li>
         </WorldKindLink>
-        <NavItem>
-          <WorldKindLink to="/">
-            <p>Home</p>
-          </WorldKindLink>
-        </NavItem>
-
-        <NavItem backgroundColor="#225358" color="white">
-          <WorldKindLink to="projects">
-            <p>Projects</p>
-          </WorldKindLink>
-        </NavItem>
-
-        <NavItem>
-          <WorldKindLink to="/">
-            <p>What we do</p>
-          </WorldKindLink>
-        </NavItem>
-        <NavItem>
-          <WorldKindLink to="/blog">
-            <p>Blog</p>
-          </WorldKindLink>
-        </NavItem>
+        <div
+          style={{
+            width: "50%",
+            display: "grid",
+            gridTemplateColumns: "repeat(3, 1fr)",
+          }}
+        >
+          {NavItems.map(item => {
+            return (
+              <NavItem
+                key={item.title}
+                onClick={() => {
+                  setIsCurrentTab(item.to.split("/")[1])
+                }}
+                shouldHighlightTab={item.to.split("/")[1] === currentPage}
+              >
+                <WorldKindLink to={item.to}>
+                  <p>{item.title}</p>
+                </WorldKindLink>
+              </NavItem>
+            )
+          })}
+        </div>
       </DesktopNavigation>
 
       <MobileNavigation>
