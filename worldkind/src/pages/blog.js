@@ -39,6 +39,7 @@ export default function Blog() {
               <a
                 href={`${item.url}`}
                 target="_blank"
+                rel="noopener noreferrer"
                 style={{ textDecoration: "none" }}
               >
                 <Card key={item.title}>
@@ -55,6 +56,7 @@ export default function Blog() {
                     <Paragraph align="center">{item.description}</Paragraph>
                     <div>
                       <img
+                        alt={`${item.author} avatar`}
                         style={{
                           width: "36px",
                           height: "36px",
