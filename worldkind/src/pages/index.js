@@ -85,7 +85,7 @@ export default function Homepage() {
             </Heading>
             <Paragraph color="white">
               Every year 1.4 billion pounds of rubbish enters the ocean,
-              resulting in the deaths on 100,000 sea mammals.
+              this impacts our health, ecoystems and economies.
             </Paragraph>
           </MaxWidth>
         </LeftColumn>
@@ -101,29 +101,25 @@ export default function Homepage() {
           Our Mission
         </Heading>
         <Paragraph color="white">
-          More in depth sentences based on what we are trying to do and why
-          people should use our page! This probably only needs to be two or
-          three lines long
+          We want to enable small actions that have a large impact on environmental issues by providing knowledge on organisations driving change. 
         </Paragraph>
       </FullWidthColumn>
       <InfoSection>
         <FiveRowsOneColumn>
           <Heading size="3rem" align="left" style={{ margin: 0 }}>
-            Facts
+            Key Facts
           </Heading>
           <Paragraph>
-            Shocking facts to help show that this is a cause worth peoples
-            attention
+            Ocean pollution kills 100,00 marine mammals and 1 million seabirds every year.
           </Paragraph>
           <Paragraph>
-            More facts that are surprising can be listed here
+            By 2050 there will be more plastic in the ocean than fish.
           </Paragraph>
           <Paragraph>
-            Oh wow that is shocking! I defo want to donate some money to a great
-            charity
+            Plastic pollution causes $13 billion in damage to marine ecosystems every year.
           </Paragraph>
           <Paragraph>
-            Last fact that shows our cause can be written here
+            Chemical pollution can cause a range of health issues including reproductive and nervous system damage.
           </Paragraph>
         </FiveRowsOneColumn>
         <ThreeRowsOneColumn>
