@@ -24,6 +24,7 @@ export default function About() {
             description={modalConfigs[i].description}
             title={modalConfigs[i].title}
             image={modalConfigs[i].image}
+            url={modalConfigs[i].url}
             isModalOpen={isModalOpen}
             setIsModalOpen={setIsModalOpen}
           />
@@ -41,11 +42,10 @@ export default function About() {
         </MaxWidth>
         <MaxWidth width={60}>
           <Paragraph>
-            We've highlighted a few key projects and why we like what they do. Helping you to easily donate to a cause of your choice.
+            We've highlighted a few key projects and why we like what they do.
+            Helping you to easily donate to a cause of your choice.
           </Paragraph>
-          <Paragraph>
-            Don't need this paragraph.
-          </Paragraph>
+          <Paragraph>Don't need this paragraph.</Paragraph>
         </MaxWidth>
         <div
           style={{

@@ -54,12 +54,29 @@ const CloseButton = styled.button`
   cursor: pointer;
 `
 
+const Button = styled.button`
+  width: max-content;
+  min-height: 50px
+  height: max-content;
+  background-color: #FFAA63;
+  border: none;
+  cursor: pointer;
+  
+
+  :hover {
+    box-shadow: 0 20px 50px 0 rgba(12, 16, 20, 0.1);
+    
+    transition: transform 600ms cubic-bezier(0.23, 1, 0.32, 1);
+  }
+`
+
 export default function Modal({
   isModalOpen,
   setIsModalOpen,
   title,
   description,
   image,
+  url,
 }) {
   return (
     <ReactModal
@@ -91,6 +108,16 @@ export default function Modal({
 
           <ColumnHeading size="3rem">{title}</ColumnHeading>
           <Paragraph>{description}</Paragraph>
+          <Button>
+            <a
+              href={url}
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <Paragraph size="1rem">Check out {title}</Paragraph>
+            </a>
+          </Button>
         </ColumnWrap>
       </FeatureInformationCol>
     </ReactModal>
