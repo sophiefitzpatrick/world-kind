@@ -31,10 +31,10 @@ export default function About() {
       }
     }
   }
-
+  const windowLocation = window.location.href.split("/")
   return (
     <>
-      <Navigation />
+      <Navigation currentPage={windowLocation[3]} />
       <Layout>
         <MaxWidth width={65}>
           <Heading size="3rem">We are WorldKind.</Heading>

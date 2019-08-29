@@ -73,9 +73,10 @@ const InfoSection = styled.div`
 `
 
 export default function Homepage() {
+  const windowLocation = window.location.href.split("/")
   return (
     <div style={{ overflow: "hidden" }}>
-      <Navigation />
+      <Navigation currentPage={windowLocation[3]} />
       <Hero backgroundColor="#131515">
         <LeftColumn>
           <MaxWidth width="80">
@@ -150,6 +151,12 @@ export default function Homepage() {
           />
         </ThreeRowsOneColumn>
       </InfoSection>
+      <FullWidthColumn>
+        <Heading size="3rem" color="white" align="left" style={{ margin: 0 }}>
+          The WorldKind Team
+        </Heading>
+        <div style={{ color: "white" }}></div>
+      </FullWidthColumn>
     </div>
   )
 }

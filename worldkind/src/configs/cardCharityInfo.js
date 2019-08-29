@@ -56,7 +56,7 @@ const cardCharityInformation = [
   },
   {
     image: Surf,
-    title: "Hello1",
+    title: "Hello11",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
@@ -68,13 +68,13 @@ const cardCharityInformation = [
   },
   {
     image: Turtle,
-    title: "Hello1",
+    title: "Hello13",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
     image: SurfSewage,
-    title: "Hello1",
+    title: "Hello12",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
