@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import Link from "gatsby-link"
 import styled from "styled-components"
 
@@ -71,9 +71,7 @@ export default function Navigation({ currentPage }) {
     { title: "Projects", to: "/projects" },
     { title: "Blog", to: "/blog" },
   ]
-  const [isCurrentTab, setIsCurrentTab] = useState("")
 
-  const shouldHighlightTab = currentPage === isCurrentTab
   return (
     <>
       <DesktopNavigation>
@@ -93,9 +91,6 @@ export default function Navigation({ currentPage }) {
             return (
               <NavItem
                 key={item.title}
-                onClick={() => {
-                  setIsCurrentTab(item.to.split("/")[1])
-                }}
                 shouldHighlightTab={item.to.split("/")[1] === currentPage}
               >
                 <WorldKindLink to={item.to}>
