@@ -6,7 +6,7 @@ import CloseIcon from "../Icons/CloseIcon"
 import ColumnHeading from "../Heading"
 import Image from "../Image"
 import Paragraph from "../Paragraph"
-import World from "../../media/images/world.jpg"
+import World from "../../media/images/illustrations/world.jpg"
 
 import styles from "./styles/modalstyles.module.css"
 

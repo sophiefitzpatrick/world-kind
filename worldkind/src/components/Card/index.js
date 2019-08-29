@@ -2,6 +2,7 @@ import styled from "styled-components"
 
 const Card = styled.div`
   width: 350px;
+  position: relative;
   height: max-content;
   margin: 20px 20px;
   cursor: pointer;
@@ -9,6 +10,7 @@ const Card = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   border: 1px solid rgb(230, 233, 239);
   \ :hover {
     box-shadow: 0 20px 50px 0 rgba(12, 16, 20, 0.1);
