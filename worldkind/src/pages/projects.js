@@ -36,18 +36,14 @@ export default function About() {
       <Navigation />
       <Layout>
         <MaxWidth width={65}>
-          <Heading size="3rem">We are WorldKind.</Heading>
+          <Heading size="3rem">Ocean Conservation</Heading>
         </MaxWidth>
         <MaxWidth width={60}>
           <Paragraph>
-            Every year 1.4 billion pounds of rubbish enters the ocean, resulting
-            in the deaths on 100,000 sea mammals.
+            We've highlighted a few key projects and why we like what they do. Helping you to easily donate to a cause of your choice.
           </Paragraph>
           <Paragraph>
-            There are tons of organisations working to clean up our oceans and
-            for those who are able, donating money is a great way of supporting
-            these efforts. But there are a lot of organisations and it can be
-            difficult to know who to support without a lot of research.
+            Don't need this paragraph.
           </Paragraph>
         </MaxWidth>
         <div
