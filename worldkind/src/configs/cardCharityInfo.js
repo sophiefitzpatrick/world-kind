@@ -1,6 +1,6 @@
-import FishingNet from "../media/images/4ocean.jpg"
-import PlasticOcean from "../media/images/plastic-oceans.jpg"
-import Turtle from "../media/images/turtle.jpg"
+import FishingNet from "../media/images/illustrations/4ocean.jpg"
+import PlasticOcean from "../media/images/illustrations/plastic-oceans.jpg"
+import Turtle from "../media/images/illustrations/turtle.jpg"
 
 const cardCharityInformation = [
   {

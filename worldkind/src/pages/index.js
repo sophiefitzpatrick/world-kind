@@ -7,9 +7,9 @@ import Navigation from "../components/Navigation"
 import Paragraph from "../components/Paragraph"
 import MaxWidth from "../components/MaxWidth"
 
-import Ocean from "../media/images/4ocean.jpg"
-import Turtle from "../media/images/turtle.jpg"
-import World from "../media/images/world.jpg"
+import Ocean from "../media/images/illustrations/4ocean.jpg"
+import Turtle from "../media/images/illustrations/turtle.jpg"
+import World from "../media/images/illustrations/world.jpg"
 
 const Hero = styled.div`
   width: 100%;

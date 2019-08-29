@@ -3,7 +3,7 @@ import Link from "gatsby-link"
 import styled from "styled-components"
 
 import Image from "../Image"
-import World from "../../media/images/world.jpg"
+import logo from "../../media/images/illustrations/logo-200.png"
 
 const DesktopNavigation = styled.ul`
   background-color: white;
@@ -70,7 +70,7 @@ export default function Navigation() {
       <DesktopNavigation>
         <WorldKindLink to="/">
           <li style={{ height: "80px" }}>
-            <Image height="80px" src={World}></Image>
+            <Image height="80px" src={logo}></Image>
           </li>
         </WorldKindLink>
         <NavItem>
@@ -91,7 +91,7 @@ export default function Navigation() {
           </WorldKindLink>
         </NavItem>
         <NavItem>
-          <WorldKindLink to="/">
+          <WorldKindLink to="/blog">
             <p>Blog</p>
           </WorldKindLink>
         </NavItem>
@@ -114,7 +114,7 @@ export default function Navigation() {
           </WorldKindLink>
         </NavItem>
         <NavItem>
-          <WorldKindLink to="/">
+          <WorldKindLink to="/blog">
             <p>Blog</p>
           </WorldKindLink>
         </NavItem>
