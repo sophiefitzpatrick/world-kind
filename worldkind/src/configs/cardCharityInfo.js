@@ -6,6 +6,7 @@ import Plastic from "../media/images/illustrations/plastic-oceans.jpg"
 import Recover from "../media/images/illustrations/recover.jpg"
 import Reef from "../media/images/illustrations/reef-restoration-foundation.jpg"
 import Turtle from "../media/images/illustrations/sea-turtles.jpg"
+import Seal from "../media/images/illustrations/cuddle-earth.jpg"
 import Surf from "../media/images/illustrations/surf-rider.jpg"
 import SurfSewage from "../media/images/illustrations/surfers-against-sewage.jpg"
 import CleanUp from "../media/images/illustrations/the-ocean-cleanup.jpg"
@@ -73,6 +74,12 @@ const cardCharityInformation = [
   },
   {
     image: SurfSewage,
+    title: "Hello1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+  },
+  {
+    image: Seal,
     title: "Hello1",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
