@@ -1,14 +1,16 @@
+import Coral from "../media/images/illustrations/coralive.jpg"
 import FishingNet from "../media/images/illustrations/4ocean.jpg"
-import PlasticOcean from "../media/images/illustrations/plastic-oceans.jpg"
-import Turtle from "../media/images/illustrations/turtle.jpg"
+import Marine from "../media/images/illustrations/marine-conservation-society.jpg"
+import Giants from "../media/images/illustrations/ocean-giants-trust.jpg"
+import Plastic from "../media/images/illustrations/plastic-oceans.jpg"
+import Recover from "../media/images/illustrations/recover.jpg"
+import Reef from "../media/images/illustrations/reef-restoration-foundation.jpg"
+import Turtle from "../media/images/illustrations/sea-turtles.jpg"
+import Surf from "../media/images/illustrations/surf-rider.jpg"
+import SurfSewage from "../media/images/illustrations/surfers-against-sewage.jpg"
+import CleanUp from "../media/images/illustrations/the-ocean-cleanup.jpg"
 
 const cardCharityInformation = [
-  {
-    image: PlasticOcean,
-    title: "Hello",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
   {
     image: FishingNet,
     title: "Plastic Oceans",
@@ -16,37 +18,61 @@ const cardCharityInformation = [
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
-    image: Turtle,
+    image: Coral,
+    title: "Hello",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+  },
+  {
+    image: Marine,
     title: "Plastic Oceans5",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
-    image: FishingNet,
+    image: Plastic,
     title: "Plastic Oceans4",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
-    image: PlasticOcean,
+    image: Giants,
     title: "Plastic Oceans3",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
-    image: FishingNet,
+    image: Reef,
     title: "Plastic Oceans2",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
-    image: PlasticOcean,
+    image: Recover,
     title: "Plastic Oceans1",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
-    image: FishingNet,
+    image: Surf,
+    title: "Hello1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+  },
+  {
+    image: CleanUp,
+    title: "Hello1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+  },
+  {
+    image: Turtle,
+    title: "Hello1",
+    description:
+      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+  },
+  {
+    image: SurfSewage,
     title: "Hello1",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",

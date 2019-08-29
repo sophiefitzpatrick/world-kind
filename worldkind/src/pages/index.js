@@ -8,8 +8,8 @@ import Paragraph from "../components/Paragraph"
 import MaxWidth from "../components/MaxWidth"
 
 import Ocean from "../media/images/illustrations/4ocean.jpg"
-import Turtle from "../media/images/illustrations/turtle.jpg"
-import World from "../media/images/illustrations/world.jpg"
+import Turtle from "../media/images/illustrations/sea-turtles.jpg"
+import World from "../media/images/illustrations/logo-200.png"
 
 const Hero = styled.div`
   width: 100%;

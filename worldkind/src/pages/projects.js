@@ -23,6 +23,7 @@ export default function About() {
           <Modal
             description={modalConfigs[i].description}
             title={modalConfigs[i].title}
+            image={modalConfigs[i].image}
             isModalOpen={isModalOpen}
             setIsModalOpen={setIsModalOpen}
           />

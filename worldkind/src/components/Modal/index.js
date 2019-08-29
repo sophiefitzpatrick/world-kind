@@ -6,7 +6,6 @@ import CloseIcon from "../Icons/CloseIcon"
 import ColumnHeading from "../Heading"
 import Image from "../Image"
 import Paragraph from "../Paragraph"
-import World from "../../media/images/illustrations/world.jpg"
 
 import styles from "./styles/modalstyles.module.css"
 
@@ -60,6 +59,7 @@ export default function Modal({
   setIsModalOpen,
   title,
   description,
+  image,
 }) {
   return (
     <ReactModal
@@ -73,7 +73,7 @@ export default function Modal({
       className={styles.content_body}
     >
       <FeaturedImageCol backgroundColor="#4FB0C6">
-        <Image src={World} alt="illustration of humans on top of earth" />
+        <Image src={image} alt="illustration of humans on top of earth" />
       </FeaturedImageCol>
       <FeatureInformationCol>
         <ColumnWrap>
