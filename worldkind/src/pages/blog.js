@@ -56,12 +56,12 @@ export default function Blog() {
                     <div>
                       <img
                         style={{
-                          width: "30px",
-                          height: "30px",
+                          width: "36px",
+                          height: "36px",
                           borderRadius: "100%",
                           position: "absolute",
-                          bottom: "2%",
-                          left: "5%",
+                          bottom: "3%",
+                          left: "4%",
                         }}
                         src={item.author}
                       ></img>
