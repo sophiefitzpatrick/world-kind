@@ -18,9 +18,8 @@ const FeaturedImageCol = styled.div`
     props.backgroundColor ? props.backgroundColor : `white`};
 
   @media (max-width: 760px) {
-    height: 50%;
+    height: 100%;
     width: 100%;
-    padding: 10%;
   }
 `
 const FeatureInformationCol = styled.div`
@@ -89,7 +88,7 @@ export default function Modal({
       overlayClassName={styles.content_overlay}
       className={styles.content_body}
     >
-      <FeaturedImageCol backgroundColor="#4FB0C6">
+      <FeaturedImageCol>
         <Image
           src={image}
           alt="illustration of humans on top of earth"
