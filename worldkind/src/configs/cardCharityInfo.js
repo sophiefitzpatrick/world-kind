@@ -14,75 +14,75 @@ import CleanUp from "../media/images/illustrations/the-ocean-cleanup.jpg"
 const cardCharityInformation = [
   {
     image: FishingNet,
-    title: "Plastic Oceans",
+    title: "4ocean",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Cleaning up our oceans since 2017, 4ocean has already removed over 6 million pounds. Every bracelet purchased removes 1 pound of rubbish.",
   },
   {
     image: Coral,
     title: "Coral Live",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: Marine,
-    title: "Plastic Oceans5",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: Plastic,
-    title: "Plastic Oceans4",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: Giants,
-    title: "Plastic Oceans3",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: Reef,
-    title: "Plastic Oceans2",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: Recover,
-    title: "Plastic Oceans1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: Surf,
-    title: "Hello11",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: CleanUp,
-    title: "Hello1",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
-  },
-  {
-    image: Turtle,
-    title: "Hello13",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Focused on restoring coral ecosytems through education, best practices and marine protection areas. 90% of the funds goes to their work.",
   },
   {
     image: SurfSewage,
-    title: "Hello12",
+    title: "Surfers Against Sewage",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "A grassroots movement organising coastlines clean ups, providing educational support to schools and petitioning governments.",
+  },
+  {
+    image: Plastic,
+    title: "Plastic Oceans",
+    description:
+      "Driving global awareness to rethink plastic through several programmes including water refill stations, digital content and films.",
+  },
+  {
+    image: Giants,
+    title: "Ocean's Giant Trust",
+    description:
+      "Research, conservation and education to protect our gentle sea giants, partnering with similar organisations and campaigning for change.",
+  },
+  {
+    image: Reef,
+    title: "Reef Restoration Trust",
+    description:
+      "Working to regenerate our damaged reef from bleaching by 2021 by growing and planting 25,000 new corals.",
+  },
+  {
+    image: Recover,
+    title: "Recover",
+    description:
+      "Recover wants to turn the tide on ocean pollution by collecting waste and turning it into eco-friendly reefs that promote life.",
+  },
+  {
+    image: Surf,
+    title: "Surf Rider",
+    description:
+      "Running local and national campaigns to raise ocean awareness. In 2013, they implemented the National Ocean Policy under Obama.",
+  },
+  {
+    image: CleanUp,
+    title: "The Ocean Cleanup",
+    description:
+      "Developing advanced technologies to rid the world's oceans of plastic by cleaning up half the Great Pacific Garbage Patch in 5 years.",
+  },
+  {
+    image: Turtle,
+    title: "SEE Turtles",
+    description:
+      "Educating against turtle shell manufacturing throughout Latin America. More than 100 teachers and community leaders have been trained as of 2019.",
+  },
+  {
+    image: Marine,
+    title: "Marine Conservation Society",
+    description:
+      "Delivering education through workshops, documentary making and an active plastic bottle return programme, reducing damage to our oceans.",
   },
   {
     image: Seal,
-    title: "Hello1",
+    title: "Cuddle Earth",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Cuddle Earth is on a mission to protect wildlife impacted by plastic pollution. For every penny spent, a gram of rubbish is removed from our coastlines.",
   },
 ]
 export default cardCharityInformation

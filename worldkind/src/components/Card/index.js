@@ -4,6 +4,7 @@ const Card = styled.div`
   width: 350px;
   position: relative;
   height: max-content;
+
   margin: 20px 20px;
   cursor: pointer;
 

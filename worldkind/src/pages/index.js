@@ -137,8 +137,7 @@ export default function Homepage({ location }) {
               WorldKind.
             </Heading>
             <Paragraph color="white">
-              Every year 1.4 billion pounds of rubbish enters the ocean, this
-              impacts our health, ecoystems and economies.
+              Every year 1.4 billion pounds of rubbish enters the ocean. Impacting our health, ecoystems and economies.
             </Paragraph>
           </MaxWidth>
         </LeftColumn>
