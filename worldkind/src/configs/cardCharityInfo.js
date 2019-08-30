@@ -25,10 +25,10 @@ const cardCharityInformation = [
       "Focused on restoring coral ecosytems through education, best practices and marine protection areas. 90% of the funds goes to their work.",
   },
   {
-    image: Marine,
-    title: "Marine Conservation Society",
+    image: SurfSewage,
+    title: "Surfers Against Sewage",
     description:
-      "Delivering education through workshops, documentary making and an active plastic bottle return programme, reducing damage to our oceans.",
+      "A grassroots movement organising coastlines clean ups, providing educational support to schools and petitioning governments.",
   },
   {
     image: Plastic,
@@ -73,10 +73,10 @@ const cardCharityInformation = [
       "Educating against turtle shell manufacturing throughout Latin America. More than 100 teachers and community leaders have been trained as of 2019.",
   },
   {
-    image: SurfSewage,
-    title: "Surfers Against Sewage",
+    image: Marine,
+    title: "Marine Conservation Society",
     description:
-      "A grassroots movement organising coastlines clean ups, providing educational support to schools and petitioning governments.",
+      "Delivering education through workshops, documentary making and an active plastic bottle return programme, reducing damage to our oceans.",
   },
   {
     image: Seal,
