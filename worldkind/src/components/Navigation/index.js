@@ -47,14 +47,15 @@ const NavItem = styled.li`
   font-size: 25px;
   text-align: center;
   height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
   background-color: ${props => props.shouldHighlightTab && "#225358"};
   color: ${props =>
     props.shouldHighlightTab ? "white" : props.color || "#225358"};
 
   @media (max-width: 500px) {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     font-size: 20px;
     padding: 0 5px;
   }
@@ -89,14 +90,14 @@ export default function Navigation({ currentPage }) {
         >
           {NavItems.map(item => {
             return (
-              <NavItem
-                key={item.title}
-                shouldHighlightTab={item.to === currentPage}
-              >
-                <WorldKindLink to={item.to}>
-                  <p>{item.title}</p>
-                </WorldKindLink>
-              </NavItem>
+              <WorldKindLink to={item.to}>
+                <NavItem
+                  key={item.title}
+                  shouldHighlightTab={item.to === currentPage}
+                >
+                  <p style={{ margin: 0 }}>{item.title}</p>
+                </NavItem>
+              </WorldKindLink>
             )
           })}
         </div>
