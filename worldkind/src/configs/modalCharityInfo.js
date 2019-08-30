@@ -13,11 +13,11 @@ import Seal from "../media/images/illustrations/modal-illustrations/seal.jpg" //
 
 const modalConfig = [
   {
-    title: "Coral Alive",
+    title: "Coral Live",
     image: Coral,
     url: "https://coralive.org/what-we-do/",
     description:
-      "Coral Alive is focused on protecting, managing and restoring costal ecosytems. They achieve this through education programmes, sharing best practises in reef restoration, and managing marine protected areas. 90% of their funds are invested in their work as well as campaigns, outreach and education.",
+      "Coral Live is focused on protecting, managing and restoring costal ecosytems. They achieve this through education programmes, sharing best practises in reef restoration, and managing marine protected areas. 90% of their funds are invested in their work as well as campaigns, outreach and education.",
   },
   {
     title: "4ocean",
