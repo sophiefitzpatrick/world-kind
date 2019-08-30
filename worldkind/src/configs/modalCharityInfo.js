@@ -1,15 +1,15 @@
-import Coral from "../media/images/illustrations/modal-illustrations/coral.jpg"
-import FishingNet from "../media/images/illustrations/modal-illustrations/4ocean.jpg"
-import Marine from "../media/images/illustrations/modal-illustrations/marine-society.jpg"
-import Giants from "../media/images/illustrations/modal-illustrations/giants.jpg"
-import Plastic from "../media/images/illustrations/modal-illustrations/plastic.jpg"
-import Recover from "../media/images/illustrations/modal-illustrations/recover.jpg"
-import Reef from "../media/images/illustrations/modal-illustrations/reef.jpg"
-import Turtle from "../media/images/illustrations/modal-illustrations/sea-turtles.jpg"
+import Coral from "../media/images/illustrations/modal-illustrations/coral.jpg" // coral alive
+import FishingNet from "../media/images/illustrations/modal-illustrations/4ocean.jpg" // 4ocean
+import Marine from "../media/images/illustrations/modal-illustrations/marine-society.jpg" // marinsociety
+import Giants from "../media/images/illustrations/modal-illustrations/giants.jpg" // giants
+import Plastic from "../media/images/illustrations/modal-illustrations/plastic.jpg" // plastic oceans
+import Recover from "../media/images/illustrations/modal-illustrations/recover.jpg" // recover
+import Reef from "../media/images/illustrations/modal-illustrations/reef.jpg" // reef retortion
+import Turtle from "../media/images/illustrations/modal-illustrations/sea-turtles.jpg" // see turtles
 import Surf from "../media/images/illustrations/modal-illustrations/surf-rider.jpg"
 import SurfSewage from "../media/images/illustrations/modal-illustrations/surfers-sewage.jpg"
 import CleanUp from "../media/images/illustrations/modal-illustrations/ocean-cleanup.jpg"
-import Seal from "../media/images/illustrations/modal-illustrations/seal.jpg"
+import Seal from "../media/images/illustrations/modal-illustrations/seal.jpg" // cuddle earth
 
 const modalConfig = [
   {
