@@ -44,7 +44,6 @@ export default function About({ location }) {
             We've highlighted a few key projects and why we like what they do.
             Helping you to easily donate to a cause of your choice.
           </Paragraph>
-          <Paragraph>Don't need this paragraph.</Paragraph>
         </MaxWidth>
         <div
           style={{

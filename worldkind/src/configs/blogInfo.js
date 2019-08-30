@@ -5,7 +5,7 @@ import Plastic from "../media/images/images/plastic.jpeg"
 import WorldKinder from "../media/images/images/worldkinder.jpeg"
 
 import Aisling from "../media/avatars/aisling.png"
-import Charlotte from "../media/avatars/charlotte.jpeg"
+import Charlotte from "../media/avatars/charlotte.png"
 import Sophie from "../media/avatars/sophie.png"
 
 const blogInformation = [
