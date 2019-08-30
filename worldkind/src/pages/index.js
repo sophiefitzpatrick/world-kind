@@ -7,9 +7,10 @@ import Navigation from "../components/Navigation"
 import Paragraph from "../components/Paragraph"
 import MaxWidth from "../components/MaxWidth"
 
-import Ocean from "../media/images/illustrations/4ocean.jpg"
-import Turtle from "../media/images/illustrations/sea-turtles.jpg"
-import World from "../media/images/illustrations/logo-200.png"
+import Freddie from "../media/images/illustrations/homepage/freddie.jpg"
+import Kelp from "../media/images/illustrations/homepage/homepage-kelp.jpg"
+import Net from "../media/images/illustrations/homepage/homepage-net.jpg"
+import Plastic from "../media/images/illustrations/homepage/homepage-plastic.jpg"
 
 import Alaina from "../media/avatars/alaina.jpg"
 import Aisling from "../media/avatars/aisling1.png"
@@ -66,6 +67,7 @@ const FiveRowsOneColumn = styled.div`
 
 const ThreeRowsOneColumn = styled.div`
   width: 100%;
+  max-width: 500px;
   height: 800px;
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
@@ -141,10 +143,10 @@ export default function Homepage({ location }) {
           </MaxWidth>
         </LeftColumn>
         <Image
-          src={Turtle}
+          src={Freddie}
           width="100%"
           height="100%"
-          style={{ minHeight: "250px" }}
+          style={{ minHeight: "250px", marginLeft: "-10%" }}
         />
       </Hero>
       <FullWidthColumn>
@@ -180,7 +182,7 @@ export default function Homepage({ location }) {
         </FiveRowsOneColumn>
         <ThreeRowsOneColumn>
           <Image
-            src={Ocean}
+            src={Kelp}
             height="100%"
             width="100%"
             style={{
@@ -188,7 +190,7 @@ export default function Homepage({ location }) {
             }}
           />
           <Image
-            src={World}
+            src={Net}
             height="100%"
             width="100%"
             style={{
@@ -196,7 +198,7 @@ export default function Homepage({ location }) {
             }}
           />
           <Image
-            src={Turtle}
+            src={Plastic}
             height="100%"
             width="100%"
             style={{ justifySelf: "end" }}
@@ -230,6 +232,7 @@ export default function Homepage({ location }) {
               href={person.url}
               target="_blank"
               style={{ textDecoration: "none" }}
+              rel="noopener noreferrer"
             >
               <div
                 style={{
