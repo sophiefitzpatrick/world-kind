@@ -104,26 +104,23 @@ export default function Navigation({ currentPage }) {
       </DesktopNavigation>
 
       <MobileNavigation>
-        <NavItem>
-          <WorldKindLink to="/">
-            <p>Home</p>
-          </WorldKindLink>
-        </NavItem>
-        <NavItem backgroundColor="#225358" color="white">
-          <WorldKindLink to="projects">
-            <p>Projects</p>
-          </WorldKindLink>
-        </NavItem>
-        <NavItem>
-          <WorldKindLink to="/">
-            <p>What we do</p>
-          </WorldKindLink>
-        </NavItem>
-        <NavItem>
-          <WorldKindLink to="/blog">
-            <p>Blog</p>
-          </WorldKindLink>
-        </NavItem>
+        <WorldKindLink to="/">
+          <li style={{ height: "80px" }}>
+            <Image height="80px" src={logo}></Image>
+          </li>
+        </WorldKindLink>
+        {NavItems.map(item => {
+          return (
+            <WorldKindLink to={item.to}>
+              <NavItem
+                key={item.title}
+                shouldHighlightTab={item.to === currentPage}
+              >
+                <p style={{ margin: 0 }}>{item.title}</p>
+              </NavItem>
+            </WorldKindLink>
+          )
+        })}
       </MobileNavigation>
     </>
   )
