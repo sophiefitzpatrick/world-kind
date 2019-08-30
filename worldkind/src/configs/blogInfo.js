@@ -2,11 +2,13 @@ import PlanetB from "../media/images/images/planet-b.jpeg"
 import Metrics from "../media/images/images/metrics.jpeg"
 import Hackathon from "../media/images/images/hackathon.png"
 import Plastic from "../media/images/images/plastic.jpeg"
+import SeaLife from "../media/images/images/sealife.jpeg"
 import WorldKinder from "../media/images/images/worldkinder.jpeg"
 
 import Aisling from "../media/avatars/aisling.png"
 import Charlotte from "../media/avatars/charlotte.png"
 import Sophie from "../media/avatars/sophie.png"
+import Jane from "../media/avatars/jane2.jpg"
 
 const blogInformation = [
   {
@@ -15,6 +17,14 @@ const blogInformation = [
     author: Sophie,
     url:
       "https://medium.com/we-are-worldkind/making-a-splash-how-were-tracking-our-success-2c9ce5c9d25a",
+  },
+  {
+    image: SeaLife,
+    description:
+      "Tech for Good: How anyone can get involved with Green Tech 🌍",
+    author: Jane,
+    url:
+      "https://medium.com/we-are-worldkind/tech-for-good-how-anyone-can-get-involved-with-green-tech-1b9348a83144",
   },
   {
     image: WorldKinder,
