@@ -78,9 +78,7 @@ const InfoSection = styled.div`
   height: max-content;
 `
 
-export default function Homepage() {
-  const windowLocation = window.location.href.split("/")
-
+export default function Homepage({ location }) {
   const worldKindTeam = [
     { name: "Charlotte Hall", twitter: "@ch_hall", avatar: Charlotte },
     { name: "Aisling Porceddu", twitter: "@aislingporceddu", avatar: Aisling },
@@ -92,7 +90,7 @@ export default function Homepage() {
   ]
   return (
     <div style={{ overflow: "hidden" }}>
-      <Navigation currentPage={windowLocation[3]} />
+      <Navigation currentPage={location.pathname} />
       <Hero backgroundColor="#131515">
         <LeftColumn>
           <MaxWidth width="80">
