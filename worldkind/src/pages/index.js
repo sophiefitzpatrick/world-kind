@@ -31,6 +31,7 @@ const Hero = styled.div`
 
   @media (max-width: 500px) {
     padding: 80px 0 0 0;
+    height: 100%;
   }
 `
 
