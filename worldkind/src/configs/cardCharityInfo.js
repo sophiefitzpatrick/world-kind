@@ -22,7 +22,7 @@ const cardCharityInformation = [
     image: Coral,
     title: "Coral Alive",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Focused on restoring coral ecosytems through education, best practices and marine protection areas. 90% of the funds goes to their work.",
   },
   {
     image: Marine,
@@ -46,13 +46,13 @@ const cardCharityInformation = [
     image: Reef,
     title: "Reef Restoration Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Working to regenerate our damaged reef from bleaching by 2021 by growing and planting 25,000 new corals.",
   },
   {
     image: Recover,
     title: "Recover",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Recover wants to turn the tide on ocean pollution by collecting waste and turning it into eco-friendly reefs that promote life.",
   },
   {
     image: Surf,
@@ -76,13 +76,13 @@ const cardCharityInformation = [
     image: SurfSewage,
     title: "Surfers Against Sewage",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "A grassroots movement organising coastlines clean ups, providing educational support to schools and petitioning governments.",
   },
   {
     image: Seal,
     title: "Cuddle Earth",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Cuddle Earth is on a mission to protect wildlife impacted by plastic pollution. For every penny spent, a gram of rubbish is removed from our coastlines.",
   },
 ]
 export default cardCharityInformation
