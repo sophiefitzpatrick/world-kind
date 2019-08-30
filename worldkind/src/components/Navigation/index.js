@@ -30,7 +30,7 @@ const MobileNavigation = styled.ul`
   z-index: 99;
   position: fixed;
   width: 100%;
-  margin: 0 0 3rem 0;
+  margin: 0;
   list-style: none;
   padding: 0;
   display: grid;

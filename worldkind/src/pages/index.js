@@ -35,7 +35,6 @@ const Hero = styled.div`
 `
 
 const LeftColumn = styled.div`
-  min-height: 250px;
   color: white;
   display: flex;
   flex-direction: column;
