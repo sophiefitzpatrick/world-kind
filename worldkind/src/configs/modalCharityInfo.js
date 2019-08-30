@@ -15,86 +15,86 @@ const modalConfig = [
   {
     title: "Coral Alive",
     image: Coral,
-    url: "https://www.facebook.com/",
+    url: "https://coralive.org/what-we-do/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Coral Alive is focused on protecting, managing and restoring costal ecosytems. They achieve this through education programmes, sharing best practises in reef restoration, and managing marine protected areas. 90% of their funds are invested in their work as well as campaigns, outreach and education.",
   },
   {
     title: "4ocean",
     image: FishingNet,
-    url: "",
+    url: "https://4ocean.com",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Since 2017 4ocean has removed over 6 million pounds of rubbish from the ocean and costlines as well as developing technology to collect debris to prevent it from entering the ocean. You can support their work by purchasing a bracelet made of recycled materials with proceeds funding their efforts.",
   },
   {
     title: "Marine Conservation Society",
     image: Marine,
-    url: "",
+    url: "https://www.mcsuk.org/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "The UK's leading charity for the protection of our sea and wildlife, the Marine Conservation Society has been educating for over 30 years. A non-profit, 79% of donations are pushed back into the society's charitable work.",
   },
   {
     title: "Ocean Giants Trust",
     image: Giants,
-    url: "",
+    url: "http://www.oceangiantstrust.org/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Ocean Giants Trust are involved in everything from on the ground activism to pushing through legislation. The trust spends as much as possible on research, conservation and education projects which contribute to saving Ocean Giants from extinction.",
   },
   {
     title: "Plastic Oceans",
     image: Plastic,
-    url: "",
+    url: "https://plasticoceans.org",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Plastic Oceans aims to reduce pollution through awareness initatives such as solutions-focused films, education programmes and water refill stations in underserved schools. They're transparent on how much money they need per project with 90% of donations going to their work.",
   },
   {
     title: "Recover",
     image: Recover,
-    url: "",
+    url: "https://www.ersatzreef.org",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "There are 5.25 trillion pieces of plastic debris in the ocean and Recover is working to remove them by processing floating plastic waste and using this waste to create eco-friendly artificial reefs with a patented process.",
   },
   {
     title: "Reef Restoration Trust",
     image: Reef,
-    url: "",
+    url: "https://reefrestorationfoundation.org/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "The Reef Restoration Foundation aims to grow and plant 25,000 new corals to regenerate the damaged reef by 2021, enabling it to recover from bleaching and cyclone damage. They're supported by scientists from James Cook University's TropWATER, Reef Ecologic and volunteers.",
   },
   {
     title: "SEE Turtles",
     image: Turtle,
-    url: "",
+    url: "https://www.seeturtles.org/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "SEE Turtles supports community based conservation efforts to protect sea turtles through education. Funding goes towards grass roots organisations on key nesting beaches as well as maintaining and building hatcheries.",
   },
   {
     title: "Surf Rider",
     image: Surf,
-    url: "",
+    url: "https://www.surfrider.org/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Straight out of Malibu, the Surfrider Foundation is a network of passionate activists working on campaigns aimed at keeping oceans clean and plastic free, preserving our coasts, keeping them accessible and addressing future dangers. They are a non-profit with 84% of donations directly funding programmes.",
   },
   {
     title: "Surfers Against Sewage",
     image: SurfSewage,
-    url: "",
+    url: "https://www.sas.org.uk",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Surfers Against Sewage is a grassroots movements who fight to protect our oceans, beaches and wildlife. They achieve this through educating communities, petitioning government on cleaner and safer marine policies, and arranging clean up volunteering efforts. 83% of their donations are spent on their environmental work.",
   },
   {
     title: "The Ocean Cleanup",
     image: CleanUp,
-    url: "",
+    url: "https://theoceancleanup.com/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Through their funds, The Ocean Cleanup is developing technology that will capture plastic and bring it to land for recycling. The first prototype was launched in 2018 with a full scale operation due by 2040. They're a non-profit and in their latest financial report over 60% of their expenses went to their clean up project.",
   },
   {
     title: "Cuddle Earth",
     image: Seal,
-    url: "",
+    url: "https://www.cuddle.earth/",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque harum nobis doloribus culpa tempore ratione atque accusantium magni delectus, tempora dolorem, exercitationem deserunt quasi quidem et vero. Id, aliquam enim! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa, velit iusto.",
+      "Cuddle Earth is a project working to educate people about the impact of single-use plastics and empower people to enage in habits which are great for the environment with their prodcts and iniatives. For penny spent on a Cuddy Earth product, a gram of litter is removed from the coastline!",
   },
 ]
 
