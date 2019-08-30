@@ -12,7 +12,7 @@ import Paragraph from "../components/Paragraph"
 import cardConfigs from "../configs/cardCharityInfo"
 import modalConfigs from "../configs/modalCharityInfo"
 
-export default function About() {
+export default function About({ location }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentlyOpenModal, setCurrentlyOpenModal] = useState("")
 
@@ -24,6 +24,7 @@ export default function About() {
             description={modalConfigs[i].description}
             title={modalConfigs[i].title}
             image={modalConfigs[i].image}
+            url={modalConfigs[i].url}
             isModalOpen={isModalOpen}
             setIsModalOpen={setIsModalOpen}
           />
@@ -31,20 +32,17 @@ export default function About() {
       }
     }
   }
-  const windowLocation = window.location.href.split("/")
   return (
     <>
-      <Navigation currentPage={windowLocation[3]} />
+      <Navigation currentPage={location.pathname} />
       <Layout>
         <MaxWidth width={65}>
           <Heading size="3rem">Ocean Conservation</Heading>
         </MaxWidth>
         <MaxWidth width={60}>
           <Paragraph>
-            We've highlighted a few key projects and why we like what they do. Helping you to easily donate to a cause of your choice.
-          </Paragraph>
-          <Paragraph>
-            Don't need this paragraph.
+            We've highlighted a few key projects and why we like what they do.
+            Helping you to easily donate to a cause of your choice.
           </Paragraph>
         </MaxWidth>
         <div

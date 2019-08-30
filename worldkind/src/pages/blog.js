@@ -12,11 +12,10 @@ import logo from "../media/images/illustrations/logo-200.png"
 
 import blogInformation from "../configs/blogInfo.js"
 
-export default function Blog() {
-  const windowLocation = window.location.href.split("/")
+export default function Blog({ location }) {
   return (
     <>
-      <Navigation currentPage={windowLocation[3]} />
+      <Navigation currentPage={location.pathname} />
       <Layout>
         <Image src={logo}></Image>
         <MaxWidth width={65}>

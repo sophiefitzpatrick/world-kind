@@ -20,7 +20,7 @@ const cardCharityInformation = [
   },
   {
     image: Coral,
-    title: "Hello",
+    title: "Coral Alive",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },

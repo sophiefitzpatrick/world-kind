@@ -12,9 +12,11 @@ import Turtle from "../media/images/illustrations/sea-turtles.jpg"
 import World from "../media/images/illustrations/logo-200.png"
 
 import Alaina from "../media/avatars/alaina.jpg"
-import Aisling from "../media/avatars/aisling.png"
-import Charlotte from "../media/avatars/charlotte.jpeg"
-import Rachel from "../media/avatars/rachel.png"
+import Aisling from "../media/avatars/aisling1.png"
+import Beth from "../media/avatars/beth.jpeg"
+import Charlotte from "../media/avatars/charlotte.png"
+import Jane from "../media/avatars/jane.jpg"
+import Rachel from "../media/avatars/rachel.jpg"
 import Sophie from "../media/avatars/sophie.png"
 
 const Hero = styled.div`
@@ -78,21 +80,54 @@ const InfoSection = styled.div`
   height: max-content;
 `
 
-export default function Homepage() {
-  const windowLocation = window.location.href.split("/")
-
+export default function Homepage({ location }) {
   const worldKindTeam = [
-    { name: "Charlotte Hall", twitter: "@ch_hall", avatar: Charlotte },
-    { name: "Aisling Porceddu", twitter: "@aislingporceddu", avatar: Aisling },
-    { name: "Rachel Franklin", twitter: "@tobequitefrank1", avatar: Rachel },
-    { name: "Jane Adojutelegan", twitter: "J_Adojutelegan", avatar: Aisling },
-    { name: "Beth Gill", twitter: "@Bethany_Gill98", avatar: Rachel },
-    { name: "Alaina Badar", dribble: "@alainarobert", avatar: Alaina },
-    { name: "Sophie Fitzpatrick", twitter: "@srfitzpatrick_", avatar: Sophie },
+    {
+      name: "Charlotte Hall",
+      twitter: "@ch_hall",
+      avatar: Charlotte,
+      url: "https://twitter.com/ch_hall",
+    },
+    {
+      name: "Aisling Porceddu",
+      twitter: "@aislingporceddu",
+      avatar: Aisling,
+      url: "https://twitter.com/aislingporceddu",
+    },
+    {
+      name: "Rachel Franklin",
+      twitter: "@tobequitefrank1",
+      avatar: Rachel,
+      url: "https://twitter.com/tobequitefrank1",
+    },
+    {
+      name: "Jane Adojutelegan",
+      twitter: "@J_Adojutelegan",
+      avatar: Jane,
+      url: "https://twitter.com/J_Adojutelegan",
+    },
+    {
+      name: "Bethany Gill",
+      twitter: "@Bethany_Gill98",
+      avatar: Beth,
+      url: "https://twitter.com/Bethany_Gill98",
+    },
+    {
+      name: "Alaina Robert",
+      dribble: "@alainarobert",
+      avatar: Alaina,
+      url: "https://dribbble.com/alainarobert",
+    },
+    {
+      name: "Sophie Fitzpatrick",
+      twitter: "@srfitzpatrick_",
+      avatar: Sophie,
+      url: "https://twitter.com/srfitzpatrick_",
+    },
   ]
   return (
     <div style={{ overflow: "hidden" }}>
-      <Navigation currentPage={windowLocation[3]} />
+      <Navigation currentPage={location.pathname} />
       <Hero backgroundColor="#131515">
         <LeftColumn>
           <MaxWidth width="80">
@@ -183,6 +218,7 @@ export default function Homepage() {
           style={{
             color: "white",
             width: "100%",
+            maxWidth: "1000px",
             height: "max-content",
             display: "grid",
             gridTemplateColumns: "repeat(auto-fit, minmax(250px, 1fr))",
@@ -190,22 +226,28 @@ export default function Homepage() {
           }}
         >
           {worldKindTeam.map(person => (
-            <div
-              style={{
-                display: "flex",
-                flexDirection: "column",
-                justifyContent: "center",
-                alignItems: "center",
-                cursor: "pointer",
-                margin: "5% 0",
-              }}
+            <a
+              href={person.url}
+              target="_blank"
+              style={{ textDecoration: "none" }}
             >
-              <Image width="100px" height="100px" src={person.avatar} />
-              <Paragraph color="white">{person.name}</Paragraph>
-              <Paragraph color="white" size="0.8rem" style={{ margin: 0 }}>
-                {person.twitter || person.dribble}
-              </Paragraph>
-            </div>
+              <div
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  cursor: "pointer",
+                  margin: "5% 0",
+                }}
+              >
+                <Image width="100px" height="100px" src={person.avatar} />
+                <Paragraph color="white">{person.name}</Paragraph>
+                <Paragraph color="white" size="1rem" style={{ margin: 0 }}>
+                  {person.twitter || person.dribble}
+                </Paragraph>
+              </div>
+            </a>
           ))}
         </div>
       </FullWidthColumn>

@@ -91,7 +91,7 @@ export default function Navigation({ currentPage }) {
             return (
               <NavItem
                 key={item.title}
-                shouldHighlightTab={item.to.split("/")[1] === currentPage}
+                shouldHighlightTab={item.to === currentPage}
               >
                 <WorldKindLink to={item.to}>
                   <p>{item.title}</p>
