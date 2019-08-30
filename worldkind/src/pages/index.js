@@ -19,6 +19,7 @@ import Charlotte from "../media/avatars/charlotte.png"
 import Jane from "../media/avatars/jane.jpg"
 import Rachel from "../media/avatars/rachel.jpg"
 import Sophie from "../media/avatars/sophie.png"
+import styles from "./styles/homepage.module.css"
 
 const Hero = styled.div`
   width: 100%;
@@ -146,7 +147,7 @@ export default function Homepage({ location }) {
           src={Freddie}
           width="100%"
           height="100%"
-          style={{ minHeight: "250px", marginLeft: "-10%" }}
+          className={styles.freddie}
         />
       </Hero>
       <FullWidthColumn>

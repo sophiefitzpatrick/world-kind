@@ -1,0 +1,10 @@
+.freddie {
+  min-height: 250px;
+  margin-left: -10%;
+}
+
+@media (max-width: 500px) {
+  .freddie {
+    margin-left: 0;
+  }
+}
