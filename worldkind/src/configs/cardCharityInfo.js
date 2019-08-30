@@ -14,9 +14,9 @@ import CleanUp from "../media/images/illustrations/the-ocean-cleanup.jpg"
 const cardCharityInformation = [
   {
     image: FishingNet,
-    title: "Plastic Oceans",
+    title: "4ocean",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Cleaning up our oceans since 2017, 4ocean has already removed over 6 million pounds. Every bracelet purchased removes 1 pound of rubbish.",
   },
   {
     image: Coral,
@@ -26,61 +26,61 @@ const cardCharityInformation = [
   },
   {
     image: Marine,
-    title: "Plastic Oceans5",
+    title: "Marine Conservation Society",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Delivering education through workshops, documentary making and an active plastic bottle return programme, reducing damage to our oceans.",
   },
   {
     image: Plastic,
-    title: "Plastic Oceans4",
+    title: "Plastic Oceans",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Driving global awareness to rethink plastic through several programmes including water refill stations, digital content and films.",
   },
   {
     image: Giants,
-    title: "Plastic Oceans3",
+    title: "Ocean's Giant Trust",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Research, conservation and education to protect our gentle sea giants, partnering with similar organisations and campaigning for change.",
   },
   {
     image: Reef,
-    title: "Plastic Oceans2",
+    title: "Reef Restoration Trust",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
     image: Recover,
-    title: "Plastic Oceans1",
+    title: "Recover",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
     image: Surf,
-    title: "Hello11",
+    title: "Surf Rider",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Running local and national campaigns to raise ocean awareness. In 2013, they implemented the National Ocean Policy under Obama.",
   },
   {
     image: CleanUp,
-    title: "Hello1",
+    title: "The Ocean Cleanup",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Developing advanced technologies to rid the world's oceans of plastic by cleaning up half the Great Pacific Garbage Patch in 5 years.",
   },
   {
     image: Turtle,
-    title: "Hello13",
+    title: "SEE Turtles",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
+      "Educating against turtle shell manufacturing throughout Latin America. More than 100 teachers and community leaders have been trained as of 2019.",
   },
   {
     image: SurfSewage,
-    title: "Hello12",
+    title: "Surfers Against Sewage",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
   {
     image: Seal,
-    title: "Hello1",
+    title: "Cuddle Earth",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis laborum neque qui? Ad nesciunt corrupti deleniti sunt. Adipisc epellat eius.",
   },
