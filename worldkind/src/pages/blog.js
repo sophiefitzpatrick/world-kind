@@ -19,10 +19,10 @@ export default function Blog({ location }) {
       <Layout>
         <Image src={logo}></Image>
         <MaxWidth width={65}>
-          <Heading size="3rem">We Are WorldKind</Heading>
+          <Heading size="3rem">Updates from the Team</Heading>
         </MaxWidth>
         <MaxWidth width={60}>
-          <Paragraph>Empowering big impact with small actions</Paragraph>
+          <Paragraph>See what the team are up to and how you can become WorldKinder.</Paragraph>
         </MaxWidth>
         <div
           style={{
