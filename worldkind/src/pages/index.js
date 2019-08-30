@@ -7,10 +7,10 @@ import Navigation from "../components/Navigation"
 import Paragraph from "../components/Paragraph"
 import MaxWidth from "../components/MaxWidth"
 
-import Freddie from "../media/images/illustrations/homepage/freddie.jpg"
-import Kelp from "../media/images/illustrations/homepage/homepage-kelp.jpg"
-import Net from "../media/images/illustrations/homepage/homepage-net.jpg"
-import Plastic from "../media/images/illustrations/homepage/homepage-plastic.jpg"
+import CleanOcean from "../media/images/illustrations/homepage/clean-ocean.jpg"
+import One from "../media/images/illustrations/homepage/one.jpg"
+import Two from "../media/images/illustrations/homepage/two.jpg"
+import Three from "../media/images/illustrations/homepage/three.jpg"
 
 import Alaina from "../media/avatars/alaina.jpg"
 import Aisling from "../media/avatars/aisling1.png"
@@ -74,6 +74,10 @@ const ThreeRowsOneColumn = styled.div`
   height: 800px;
   display: grid;
   grid-template-rows: repeat(auto-fill, minmax(250px, 1fr));
+
+  @media (max-width: 700px) {
+    margin-top: 75px;
+  }
 `
 
 const InfoSection = styled.div`
@@ -145,7 +149,7 @@ export default function Homepage({ location }) {
           </MaxWidth>
         </LeftColumn>
         <Image
-          src={Freddie}
+          src={CleanOcean}
           width="100%"
           height="100%"
           className={styles.freddie}
@@ -184,7 +188,7 @@ export default function Homepage({ location }) {
         </FiveRowsOneColumn>
         <ThreeRowsOneColumn>
           <Image
-            src={Kelp}
+            src={One}
             height="100%"
             width="100%"
             style={{
@@ -192,7 +196,7 @@ export default function Homepage({ location }) {
             }}
           />
           <Image
-            src={Net}
+            src={Two}
             height="100%"
             width="100%"
             style={{
@@ -200,7 +204,7 @@ export default function Homepage({ location }) {
             }}
           />
           <Image
-            src={Plastic}
+            src={Three}
             height="100%"
             width="100%"
             style={{ justifySelf: "end" }}
