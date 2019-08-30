@@ -12,7 +12,7 @@ import Paragraph from "../components/Paragraph"
 import cardConfigs from "../configs/cardCharityInfo"
 import modalConfigs from "../configs/modalCharityInfo"
 
-export default function About() {
+export default function About({ location }) {
   const [isModalOpen, setIsModalOpen] = useState(false)
   const [currentlyOpenModal, setCurrentlyOpenModal] = useState("")
 
@@ -32,10 +32,9 @@ export default function About() {
       }
     }
   }
-  const windowLocation = window.location.href.split("/")
   return (
     <>
-      <Navigation currentPage={windowLocation[3]} />
+      <Navigation currentPage={location.pathname} />
       <Layout>
         <MaxWidth width={65}>
           <Heading size="3rem">Ocean Conservation</Heading>
