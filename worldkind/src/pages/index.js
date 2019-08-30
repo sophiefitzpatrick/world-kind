@@ -35,6 +35,7 @@ const Hero = styled.div`
 `
 
 const LeftColumn = styled.div`
+  min-height: 250px;
   color: white;
   display: flex;
   flex-direction: column;
@@ -60,6 +61,7 @@ const FullWidthColumn = styled.div`
 
 const FiveRowsOneColumn = styled.div`
   width: 100%;
+  height: 100%;
   display: grid;
   grid-template-rows: repeat(5, 20%);
   grid-row-gap: 1em;

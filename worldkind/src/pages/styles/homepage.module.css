@@ -1,6 +1,7 @@
 .freddie {
   min-height: 250px;
   margin-left: -10%;
+  min-height: 250px;
 }
 
 @media (max-width: 500px) {
